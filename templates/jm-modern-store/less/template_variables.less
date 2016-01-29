@@ -1,0 +1,603 @@
+/*--------------------------------------------------------------
+# Copyright (C) joomla-monster.com
+# License: http://www.joomla-monster.com/license.html Joomla-Monster Proprietary Use License
+# Website: http://www.joomla-monster.com
+# Support: info@joomla-monster.com
+---------------------------------------------------------------*/
+
+/* ==========================================================================
+   COLOR styles
+   ========================================================================== */
+  
+// Color versions
+// --------------------------------------------------
+
+//red   
+@JMstyle1: #ff5a5c;
+
+//blue
+@JMstyle2: #2D597F;
+
+//green
+@JMstyle3: #379F7A;
+
+// Global colors
+// --------------------------------------------------
+
+@JMwhite: #ffffff;
+@JMblack: #000000;
+
+// Layout values
+// --------------------------------------------------
+
+//gutter
+@JMbaseSpace: 30px;
+
+//default line-height
+@JMbaseLineHeight: 1.5em;
+
+//logo
+@JMlogoFontColorHover: #444444;
+
+//body font color
+@JMbodyFont: #5F5F5F;
+@JMbodyFontSize: 13px;
+
+//body background colors
+@JMbodyBackgroundColor: #121212;
+@JMbodyBorderColor: #191919;
+
+//allpage background
+@JMallpageBackground: @JMwhite;
+
+//borders
+@JMborder: #ececec;
+
+//section backgrounds
+@JMheaderBackground: #f8f8f8;
+@JMmainWrapperBackground: #f8f8f8;
+@JMmainBackground: @JMwhite;
+@JMbottom0TitleCenterBackground: #f8f8f8;
+@JMbottom1Background: @JMwhite;
+@JMbottom2Background: #F3F3F3;
+@JMfootermodBackground: #191919;
+@JMfooterBackground: @JMbodyBackgroundColor;
+
+@JMfootermodFontColor: #717171;
+@JMfooterFontColor: #3F3F3F;
+
+//links hover
+@JMstyle1Link: #E14E3C;
+@JMstyle2Link: @JMstyle2;
+@JMstyle3Link: @JMstyle3;
+
+//article-info
+@JMarticleInfoFontColor: #B4B4B4;
+
+// DJ Megamenu values
+// --------------------------------------------------
+
+@JMstyle1MegamenuBorderHover: @JMstyle1;
+@JMstyle1MegamenuFontColorHover: @JMstyle1;
+
+@JMstyle2MegamenuBorderHover: @JMstyle2;
+@JMstyle2MegamenuFontColorHover: @JMstyle2;
+
+@JMstyle3MegamenuBorderHover: @JMstyle3;
+@JMstyle3MegamenuFontColorHover: @JMstyle3;
+
+// Menu Module values
+// --------------------------------------------------
+
+@JMmenuFontColor: #444444;
+@JMmenuFontColorHover: @JMwhite;
+
+@JMstyle1MenuBackgroundHover: @JMstyle1;
+@JMstyle2MenuBackgroundHover: @JMstyle2;
+@JMstyle3MenuBackgroundHover: @JMstyle3;
+
+@JMstyle1MenuFontColorHover: @JMstyle1;
+@JMstyle2MenuFontColorHover: @JMstyle2;
+@JMstyle3MenuFontColorHover: @JMstyle3;
+
+@JMfootermodMenuFontColor: @JMwhite;
+
+@JMverticalMenuBorderColor: #444444;
+@JMfootermodVerticalMenuFontColor: #717171;
+@JMfootermodVerticalMenuBorder: #717171;
+
+@JMtopbar2VerticalMenuFontColor: #6f6e6e;
+@JMtopbar2VerticalMenuBorder: #6f6e6e;
+
+@JMfootermodBracketsMenuFontColor: #717171;
+
+// Modules values
+// --------------------------------------------------
+
+@JMmoduleTitleFontColor: #444444;
+
+@JMstyle1ModuleTiteBorder: @JMstyle1;
+@JMstyle2ModuleTiteBorder: @JMstyle2;
+@JMstyle3ModuleTiteBorder: @JMstyle3;
+
+@JMfootermodModuleFontColor: @JMwhite;
+@JMfootermodModuleBorder: #373737;
+
+@JMmoduleBadgeTitleBackground: #5ab3ff;
+@JMmoduleBadgeTitleFontColor: @JMwhite;
+
+@JMmoduleBoxBackground: @JMwhite;
+@JMmoduleBoxTitleBackground: #5ab3ff;
+@JMmoduleBoxTitleFontColor: @JMwhite;
+@JMmoduleBoxTitleTriangleBackground: #2491ee;
+
+/* custom */
+
+@JMcustomslideTitleFontColor: #444444;
+
+@JMstyle1CustomslideFontColorHover: @JMstyle1;
+@JMstyle2CustomslideFontColorHover: @JMstyle2;
+@JMstyle3CustomslideFontColorHover: @JMstyle3;
+
+@JMcustomcategoriesTitleFontColor: @JMwhite;
+@JMcustomcategoriesBorder: @JMwhite;
+
+@JMstyle1CustomcategoriesBackground: @JMstyle1;
+@JMstyle2CustomcategoriesBackground: @JMstyle2;
+@JMstyle3CustomcategoriesBackground: @JMstyle3;
+
+@JMcustomdiscountFontColor: #858585;
+
+/* contact-ps */
+
+@JMcontactpsTitleFontColor: #444444;
+
+// Buttons values
+// --------------------------------------------------
+  
+@JMbuttonFontSize: 15px;
+@JMbuttonPadding: 8px 25px;
+
+@JMbuttonMiniHeight: 20px; //Note: button height, e.g. .btn-mini .button-groups .btn
+@JMbuttonSmallHeight: 30px;
+
+@JMbuttonFontColor: @JMwhite;
+
+@JMstyle1ButtonBackground: @JMstyle1;
+@JMstyle2ButtonBackground: @JMstyle2;
+@JMstyle3ButtonBackground: @JMstyle3;
+
+@JMbuttonBackgroundHover: #444444;
+
+//dropdowns (article edit button list background)
+@JMstyle1ButtonDropdown: @JMstyle1;
+@JMstyle2ButtonDropdown: @JMstyle2;
+@JMstyle3ButtonDropdown: @JMstyle3;  
+ 
+//inputs 
+@JMinputHeight: 36px; //Note: select and input[type="file"] height need to be set in bootstrap variables
+@JMinputFontSize: 13px; 
+@JMinputBorder: #e5e5e5;
+@JMinputFontColor: #acacac;
+@JMinputBackground: @JMwhite;
+@JMinputFocusBorder: #cccccc;
+
+//readmore
+@JMreadmoreFontSize: 15px;
+@JMreadmoreFontColor: @JMwhite;
+@JMreadmoreBackgroundHover: #444444;
+
+@JMstyle1ReadmoreBackground: @JMstyle1;
+@JMstyle2ReadmoreBackground: @JMstyle2;
+@JMstyle3ReadmoreBackground: @JMstyle3;
+
+// Template values
+// --------------------------------------------------
+
+//pager
+@JMpagerFontColor: @JMwhite;
+@JMpagerBackgroundHover: #444444;
+
+@JMstyle1PagerBackground: @JMstyle1;
+@JMstyle2PagerBackground: @JMstyle2;
+@JMstyle3PagerBackground: @JMstyle3;
+
+//pagination
+@JMpaginationFontColor: #444444;
+@JMpaginationFontColorActive: @JMwhite;
+@JMpaginationBackgroundHover: #444444;
+
+@JMstyle1PaginationBackground: @JMstyle1;
+@JMstyle2PaginationBackground: @JMstyle2;
+@JMstyle3PaginationBackground: @JMstyle3;
+
+@JMstyle1PaginationLinkFontColor: @JMstyle1;
+@JMstyle2PaginationLinkFontColor: @JMstyle2;
+@JMstyle3PaginationLinkFontColor: @JMstyle3;
+
+//accordion
+@JMaccordionFontColor: #444444;
+
+@JMstyle1AccordionFontColorHover: @JMstyle1;
+@JMstyle2AccordionFontColorHover: @JMstyle2;
+@JMstyle3AccordionFontColorHover: @JMstyle3;
+
+//tabs
+@JMtabsFontColor: #858585;
+@JMtabsFontColorHover: #444444;
+
+@JMstyle1TabsBorderHover: @JMstyle1;
+@JMstyle2TabsBorderHover: @JMstyle2;
+@JMstyle3TabsBorderHover: @JMstyle3;
+
+//headings links hover
+@JMheadingFontColor: #444444;
+
+@JMstyle1HeadingFontColorHover: @JMstyle1;
+@JMstyle2HeadingFontColorHover: @JMstyle2;
+@JMstyle3HeadingFontColorHover: @JMstyle3;
+
+// EDITOR
+// --------------------------------------------------
+
+@JMreadmore2FontColor: @JMwhite;
+
+@JMstyle1Readmore2Background: @JMstyle1;
+@JMstyle2Readmore2Background: @JMstyle2;
+@JMstyle3Readmore2Background: @JMstyle3;
+
+@JMstyle1Readmore2Border: #e93032;
+@JMstyle2Readmore2Border: #173E60;
+@JMstyle3Readmore2Border: #1D7E5C;
+
+@JMcustomserviceFontColor: #717171;
+@JMcustomserviceBoxBackground: @JMwhite;
+
+@JManimatedimageFontColor: #444444;
+
+// MEDIATOOLS
+// --------------------------------------------------
+
+@JMstyle1MediatoolsAlbumTitleBorder: @JMstyle1;
+@JMstyle2MediatoolsAlbumTitleBorder: @JMstyle2;
+@JMstyle3MediatoolsAlbumTitleBorder: @JMstyle3;
+
+@JMstyle1MediatoolsGalleryGridSlideBorderHover: @JMstyle1;
+@JMstyle2MediatoolsGalleryGridSlideBorderHover: @JMstyle2;
+@JMstyle3MediatoolsGalleryGridSlideBorderHover: @JMstyle3;
+
+@JMstyle1MediatoolsReadmoreBorder: @JMstyle1;
+@JMstyle2MediatoolsReadmoreBorder: @JMstyle2;
+@JMstyle3MediatoolsReadmoreBorder: @JMstyle3;
+
+@JMstyle1MediatoolsReadmoreFontColor: @JMstyle1;
+@JMstyle2MediatoolsReadmoreFontColor: @JMstyle2;
+@JMstyle3MediatoolsReadmoreFontColor: @JMstyle3;
+
+@JMstyle1MediatoolsReadmoreBackgroundHover: @JMstyle1;
+@JMstyle2MediatoolsReadmoreBackgroundHover: @JMstyle2;
+@JMstyle3MediatoolsReadmoreBackgroundHover: @JMstyle3;
+
+@JMstyle1MediatoolsPaginationColor: @JMstyle1;
+@JMstyle2MediatoolsPaginationColor: @JMstyle2;
+@JMstyle3MediatoolsPaginationColor: @JMstyle3;
+
+@JMstyle1MediatoolsSlideshowThumbImageBorderHover: @JMstyle1;
+@JMstyle2MediatoolsSlideshowThumbImageBorderHover: @JMstyle2;
+@JMstyle3MediatoolsSlideshowThumbImageBorderHover: @JMstyle3;
+
+@JMstyle1MediatoolsTabberTabBackgroundActive: @JMstyle1;
+@JMstyle2MediatoolsTabberTabBackgroundActive: @JMstyle2;
+@JMstyle3MediatoolsTabberTabBackgroundActive: @JMstyle3;
+
+@JMstyle1MediatoolsCustomslideTitleColor: @JMstyle1;
+@JMstyle2MediatoolsCustomslideTitleColor: @JMstyle2;
+@JMstyle3MediatoolsCustomslideTitleColor: @JMstyle3;
+
+@JMmediatoolsSlideBorder: #e1e1e1;
+@JMmediatoolsSlideTitle: #444444;
+
+@JMmediatoolsPaginationFontColor: #444444;
+@JMmediatoolsPaginationFontColorActive: @JMwhite;
+
+@JMmediatoolDescriptionBackground: @JMwhite;
+
+//virtuemart-ms
+@JMmediatoolsVirtuemartProductPriceSalesFontSize: 14px;
+@JMmediatoolsVirtuemartProductPriceSalesLineHeight: 20px;
+@JMmediatoolsVirtuemartAddtocartFontSize: 12px;
+
+// VIRTUEMART
+// --------------------------------------------------
+
+//page headings
+@JMvirtuemartPageHeadingFontColor: #444;
+@JMvirtuemartPageHeadingFontTransform: uppercase;
+@JMvirtuemartPageHeadingFontWeight: bold;
+@JMvirtuemartPageHeadingBorderColor: #ececec;
+@JMvirtuemartPageHeadingLineHeight: 1.2em;
+@JMstyle1VirtuemartPageHeadingBackgroundColor: @JMstyle1;
+@JMstyle2VirtuemartPageHeadingBackgroundColor: @JMstyle2;
+@JMstyle3VirtuemartPageHeadingBackgroundColor: @JMstyle3;
+
+//product title on shopfront/category layout
+@JMvirtuemartProductTitleFontColor: #444;
+@JMvirtuemartProductTitleFontSize: 18px;
+@JMvirtuemartProductTitleLineHeight: 25px;
+@JMvirtuemartProductTitleMaxWidth: 150px;
+@JMvirtuemartProductTitleFontWeight: bold;
+@JMstyle1VirtuemartProductTitleFontHoverColor: @JMstyle1;
+@JMstyle2VirtuemartProductTitleFontHoverColor: @JMstyle2;
+@JMstyle3VirtuemartProductTitleFontHoverColor: @JMstyle3;
+
+//category
+@JMvirtuemartCategoryTitleFontColor: #fff;
+@JMvirtuemartCategoryTitleFontSize: 30px;
+@JMvirtuemartCategoryTitleFontWeight: bold;
+@JMvirtuemartCategoryTitleFontTransform: uppercase;
+@JMvirtuemartCategoryTitleBorderColor: #fff;
+@JMstyle1VirtuemartCategoryBackgroundColor: @JMstyle1;
+@JMstyle2VirtuemartCategoryBackgroundColor: @JMstyle2;
+@JMstyle3VirtuemartCategoryBackgroundColor: @JMstyle3;
+
+//product container
+@JMvirtuemartProductContainerBackgroundColor: #fff;
+@JMvirtuemartProductContainerBorderColor: #e1e1e1;
+
+//product price
+@JMvirtuemartProductPriceFontSize: 15px;
+@JMvirtuemartProductPriceFontColor: #acacac;
+@JMvirtuemartProductPriceFontWeight: normal;
+@JMvirtuemartProductPriceSalesFontColor: #fff;
+@JMvirtuemartProductPriceSalesFontSize: 20px;
+@JMvirtuemartProductPriceSalesLineHeight: 30px;
+@JMvirtuemartProductPriceDiscountFontColor: #d33000;
+@JMstyle1VirtuemartProductPriceSalesBackgroundColor: @JMstyle1;
+@JMstyle2VirtuemartProductPriceSalesBackgroundColor: @JMstyle2;
+@JMstyle3VirtuemartProductPriceSalesBackgroundColor: @JMstyle3;
+
+//addtocart on shopfront/category layout
+@JMvirtuemartAddtocartFontColor: #444;
+@JMvirtuemartAddtocartFontSize: 14px;
+@JMvirtuemartAddtocartHeight: 33px;
+@JMvirtuemartAddtocartLineHeight: 33px;
+@JMvirtuemartAddtocartFontTransform: uppercase;
+ 
+//addtocart disabled 
+@JMvirtuemartAddtocartDisabledFontColor: #444;
+@JMvirtuemartAddtocartDisabledFontSize: 15px;
+@JMvirtuemartAddtocartDisabledHeight: 55px;
+@JMvirtuemartAddtocartDisabledLineHeight: 55px;
+@JMvirtuemartAddtocartDisabledBackgroundColor: #f5f5f5;
+
+//product details button on shopfront/category layout
+@JMvirtuemartProductDetailsButtonFontSize: 15px;
+@JMvirtuemartProductDetailsButtonLineHeight: 1.5em;
+@JMvirtuemartProductDetailsButtonFontColor: #fff;
+@JMvirtuemartProductDetailsButtonBackgroundHover: #444;
+@JMstyle1VirtuemartProductDetailsButtonBackgroundColor: @JMstyle1;
+@JMstyle2VirtuemartProductDetailsButtonBackgroundColor: @JMstyle2;
+@JMstyle3VirtuemartProductDetailsButtonBackgroundColor: @JMstyle3;
+
+//call price on category layout
+@JMvirtuemartCallPriceFontWeight: normal;
+
+//ordering on category layout
+@JMvirtuemartOrderingBorderColor: #ECECEC;
+@JMvirtuemartOrderingResultsFontColor: #444;
+@JMvirtuemartOrderingFontColor: #acacac;
+
+@JMvirtuemartOrderingListWidth: 150px;
+@JMvirtuemartOrderingListBackgroundColor: #fff;
+@JMvirtuemartOrderingListBorderColor: #e5e5e5;
+@JMvirtuemartOrderingListFontColor: #444;
+@JMstyle1VirtuemartOrderingListFontHoverColor: @JMstyle1Link;
+@JMstyle2VirtuemartOrderingListFontHoverColor: @JMstyle2Link;
+@JMstyle3VirtuemartOrderingListFontHoverColor: @JMstyle3Link;
+
+//product navigation on product details
+@JMvirtuemartProductNavBorderColor: #ececec;
+
+//product title on product details
+@JMvirtuemartProductDetailsTitleFontColor: #444;
+@JMvirtuemartProductDetailsTitleFontSize: 22px;
+
+//product units in box
+@JMvirtuemartProductDetailsUnitsFontWeight: bold;
+
+//product price on product details
+@JMvirtuemartProductDetailsPriceFontColor: #444;
+@JMvirtuemartProductDetailsPriceFontSize: 15px;
+@JMvirtuemartProductDetailsPriceFontWeight: normal;
+@JMvirtuemartProductDetailsPriceSalesLineHeight: 42px;
+@JMvirtuemartProductDetailsPriceSalesFontSize: 42px;
+@JMvirtuemartProductDetailsPriceSalesFontWeight: bold;
+@JMvirtuemartProductDetailsPriceDiscountFontColor: #d33000;
+
+//addtocart on product details
+@JMvirtuemartProductDetailsAddtocartQuantityFontSize: 15px;
+@JMvirtuemartProductDetailsAddtocartQuantityFontColor: #444;
+
+//related categories on product details
+@JMvirtuemartProductDetailsRelatedCategoriesTitleFontColor: #fff;
+@JMvirtuemartProductDetailsRelatedCategoriesTitleFontSize: 30px;
+@JMvirtuemartProductDetailsRelatedCategoriesTitleFontWeight: bold;
+@JMvirtuemartProductDetailsRelatedCategoriesTitleLineHeight: 1.2em;
+@JMvirtuemartProductDetailsRelatedCategoriesTitleFontTransform: uppercase;
+@JMvirtuemartProductDetailsRelatedCategoriesTitleBorderColor: #fff;
+
+//customer reviews
+@JMvirtuemartProductDetailsCustomReviewsHeadingSmallFontSize: 13px;
+@JMvirtuemartProductDetailsCustomReviewsHeadingSmallFontWeight: normal;
+
+//modals
+@JMvirtuemartModalHeading1FontColor: #444;
+@JMvirtuemartModalHeading1FontWeight: bold;
+@JMvirtuemartModalHeading1FontTransform: uppercase;
+@JMvirtuemartModalHeading1FontSize: 22px;
+@JMvirtuemartModalHeading1LineHeight: 30px;
+@JMvirtuemartModalBorderColor: #ececec;
+@JMvirtuemartModalHeading2FontSize: 16px;
+@JMvirtuemartModalHeading2LineHeight: 26px;
+@JMvirtuemartModalImageBorderColor: #e1e1e1;
+@JMvirtuemartModalButtonBackgroundColor: #444;
+@JMvirtuemartModalButtonFontColor: #fff;
+@JMvirtuemartModalButtonFontSize: 15px;
+@JMvirtuemartModalButtonLineHeight: 20px;
+@JMvirtuemartModalButtonBackgroundHoverColor: #888;
+@JMvirtuemartModalRelatedProductsBackgroundColor: #444;
+@JMvirtuemartModalRelatedCategoriesBackgroundColor: #444;
+@JMvirtuemartModalRelatedCategoriesFontColor: #fff;
+@JMvirtuemartModalRelatedCategoriesFontSize: 14px;
+@JMvirtuemartModalRelatedCategoriesFontWeight: bold;
+@JMvirtuemartModalRelatedCategoriesFontTransform: uppercase;
+@JMvirtuemartModalHeading4FontSize: 14px;
+
+//manufacturer
+@JMvirtuemartManufacturerBackgroundColor: #fff;
+@JMvirtuemartManufacturerBorderColor: #e1e1e1;
+@JMvirtuemartManufacturerHeading2FontSize: 18px;
+@JMvirtuemartManufacturerHeading2LineHeight: 1.2em;
+@JMvirtuemartManufacturerHeading2FontWeight: bold;
+@JMvirtuemartManufacturerHeading2FontColor: #444;
+@JMvirtuemartManufacturerHeading1BorderColor: #ececec;
+@JMvirtuemartManufacturerHeading1FontColor: #444;
+@JMvirtuemartManufacturerHeading1FontWeight: bold;
+@JMvirtuemartManufacturerHeading1FontTransform: uppercase;
+@JMvirtuemartManufacturerButtonFontSize: 15px;
+@JMvirtuemartManufacturerButtonLineHeight: 1.5em;
+@JMvirtuemartManufacturerButtonFontColor: #fff;
+@JMvirtuemartManufacturerButtonBackgroundHoverColor: #444;
+@JMstyle1VirtuemartManufacturerHeading2FontHoverColor: @JMstyle1;
+@JMstyle2VirtuemartManufacturerHeading2FontHoverColor: @JMstyle2;
+@JMstyle3VirtuemartManufacturerHeading2FontHoverColor: @JMstyle3;
+@JMstyle1VirtuemartManufacturerButtonBackgroundColor: @JMstyle1;
+@JMstyle2VirtuemartManufacturerButtonBackgroundColor: @JMstyle2;
+@JMstyle3VirtuemartManufacturerButtonBackgroundColor: @JMstyle3;
+
+//cart
+@JMvirtuemartCartHeadingFontColor: #444;
+@JMvirtuemartCartHeadingFontWeight: bold;
+@JMvirtuemartCartHeadingFontTransform: uppercase;
+@JMvirtuemartCartHeadingBorderColor: #ececec;
+
+@JMvirtuemartLoginFormBorderColor: #ececec;
+
+@JMvirtuemartCartTableBackgroundColor: #444;
+@JMvirtuemartCartTableHeadingFontWeight: 600;
+@JMvirtuemartCartTableHeadingFontColor: #fff;
+@JMvirtuemartCartTableBorderColor: #ececec;
+
+@JMvirtuemartCartImageBackgroundColor: #fff;
+@JMvirtuemartCartImageBorderColor: #e1e1e1;
+@JMvirtuemartCartCustomFieldsFontColor: #acacac;
+@JMvirtuemartCartCheckoutStepsFontWeight: 600;
+
+@JMvirtuemartCartOrderDoneButtonFontColor: #fff;
+@JMvirtuemartCartOrderDoneButtonFontSize: 15px;
+@JMvirtuemartCartOrderDoneButtonLineHeight: 20px;
+@JMvirtuemartCartOrderDoneButtonBackgroundHoverColor: #444;
+@JMstyle1VirtuemartCartOrderDoneButtonBackgroundColor: @JMstyle1;
+@JMstyle2VirtuemartCartOrderDoneButtonBackgroundColor: @JMstyle2;
+@JMstyle3VirtuemartCartOrderDoneButtonBackgroundColor: @JMstyle3;
+
+//edit address
+@JMvirtuemartEditHeading1FontColor: #444;
+@JMvirtuemartEditHeading1FontWeight: bold;
+@JMvirtuemartEditHeading1FontTransform: uppercase;
+@JMvirtuemartEditHeading2FontSize: 16px;
+@JMvirtuemartEditHeading2FontWeight: 600;
+@JMvirtuemartEditHeading2FontTransform: uppercase;
+@JMvirtuemartEditFieldsetListBorderColor: #ececec;
+@JMvirtuemartEditFieldsetListFontWeight: 600;
+@JMvirtuemartEditUserfieldsFontWeight: 600;
+
+//list orders
+@JMvirtuemartListOrdersHeading1FontColor: #444;
+@JMvirtuemartListOrdersHeading1FontWeight: bold;
+@JMvirtuemartListOrdersHeading1FontTransform: uppercase;
+@JMvirtuemartListOrdersHeading1BorderColor: #ececec;
+@JMvirtuemartListOrdersHeading2FontSize: 16px;
+@JMvirtuemartListOrdersHeading2FontWeight: 600;
+@JMvirtuemartListOrdersHeading2FontTransform: uppercase;
+
+@JMvirtuemartAdminTableBackgroundColor: #444;
+@JMvirtuemartAdminTableHeadingFontWeight: 600;
+@JMvirtuemartAdminTableHeadingFontColor: #fff;
+@JMvirtuemartAdminTableBorderColor: #ececec;
+
+//order details
+@JMvirtuemartOrderDetailsHeading1FontColor: #444;
+@JMvirtuemartOrderDetailsHeading1FontWeight: bold;
+@JMvirtuemartOrderDetailsHeading1FontTransform: uppercase;
+@JMvirtuemartOrderDetailsHeading1BorderColor: #ececec;
+
+//tabs
+@JMvirtuemartTabsBorderColor: #ececec;
+@JMvirtuemartTabsFontSize: 15px;
+@JMvirtuemartTabsFontColor: #858585;
+@JMvirtuemartTabsFontHoverColor: #444;
+@JMstyle1VirtuemartTabsBorderHoverColor: @JMstyle1;
+@JMstyle2VirtuemartTabsBorderHoverColor: @JMstyle2;
+@JMstyle3VirtuemartTabsBorderHoverColor: @JMstyle3;
+
+//vendor
+@JMvirtuemartVendorHeading1FontColor: #444;
+@JMvirtuemartVendorHeading1FontWeight: bold;
+@JMvirtuemartVendorHeading1FontTransform: uppercase;
+@JMvirtuemartVendorHeading1BorderColor: #ececec;
+@JMvirtuemartVendorHeading2FontSize: 18px;
+@JMvirtuemartVendorHeading2FontWeight: bold;
+@JMvirtuemartVendorHeading2FontColor: #444;
+@JMvirtuemartVendorHeading3FontSize: 16px;
+@JMvirtuemartVendorHeading3FontWeight: 600;
+@JMvirtuemartVendorHeading3FontTransform: uppercase;
+@JMvirtuemartVendorImageBorderColor: #e1e1e1;
+@JMvirtuemartVendorImageBackgroundColor: #fff;
+@JMstyle1VirtuemartVendorHeading2FontHoverColor: @JMstyle1;
+@JMstyle2VirtuemartVendorHeading2FontHoverColor: @JMstyle2;
+@JMstyle3VirtuemartVendorHeading2FontHoverColor: @JMstyle3;
+
+//account
+@JMvirtuemartAccountHeading1FontColor: #444;
+@JMvirtuemartAccountHeading1FontWeight: bold;
+@JMvirtuemartAccountHeading1FontTransform: uppercase;
+@JMvirtuemartAccountHeading2FontSize: 16px;
+@JMvirtuemartAccountHeading2FontWeight: 600;
+@JMvirtuemartAccountHeading2FontTransform: uppercase;
+
+//category module
+@JMvirtuemartCategoryModuleFontColor: #444;
+@JMvirtuemartCategoryModuleFontHoverColor: #fff;
+@JMvirtuemartCategoryModuleFontSize: 14px;
+@JMvirtuemartCategoryModuleLineHeight: 1.5em;
+@JMvirtuemartCategoryModuleFootermodFontColor: #fff;
+@JMstyle1VirtuemartCategoryModuleBackgroundHoverColor: @JMstyle1;
+@JMstyle2VirtuemartCategoryModuleBackgroundHoverColor: @JMstyle2;
+@JMstyle3VirtuemartCategoryModuleBackgroundHoverColor: @JMstyle3;
+
+@JMstyle1VirtuemartCategoryModuleSubmenuFontHoverColor: @JMstyle1;
+@JMstyle2VirtuemartCategoryModuleSubmenuFontHoverColor: @JMstyle2;
+@JMstyle3VirtuemartCategoryModuleSubmenuFontHoverColor: @JMstyle3;
+
+//cart module
+@JMvirtuemartCartModuleButtonBackgroundHoverColor: #444;
+@JMvirtuemartCartModuleBorderColor: #ececec;
+@JMvirtuemartCartModuleCustomfieldsFontColor: #acacac;
+@JMvirtuemartCartModuleButtonFontSize: 15px;
+@JMvirtuemartCartModuleButtonFontColor: #fff;
+@JMvirtuemartCartModuleButtonLineHeight: 20px;
+
+@JMvirtuemartCartModuleFootermodBorderColor: #373737;
+
+@JMvirtuemartCartModuleHorizLineHeight: 33px;
+@JMvirtuemartCartModuleHorizTotalFontSize: 16px;
+@JMvirtuemartCartModuleHorizTotalFontWeight: bold;
+@JMvirtuemartCartModuleHorizTotalFontTransform: uppercase;
+
+@JMstyle1VirtuemartCartModuleButtonBackgroundColor: @JMstyle1;
+@JMstyle2VirtuemartCartModuleButtonBackgroundColor: @JMstyle2;
+@JMstyle3VirtuemartCartModuleButtonBackgroundColor: @JMstyle3;
+
+//product module
+@JMvirtuemartProductModuleAnimatedFontColor: #444;

@@ -1,0 +1,900 @@
+/*--------------------------------------------------------------
+# Copyright (C) joomla-monster.com
+# License: http://www.joomla-monster.com/license.html Joomla-Monster Proprietary Use License
+# Website: http://www.joomla-monster.com
+# Support: info@joomla-monster.com
+---------------------------------------------------------------*/
+
+/* ==========================================================================
+   VARIABLES import
+   ========================================================================== */
+  
+@import "template_variables.less";
+@import "bootstrap_variables.less";
+
+/* ==========================================================================
+   MIXINS import
+   ========================================================================== */
+  
+@import "template_mixins.less";
+@import "../../../plugins/system/jmframework/includes/assets/template/bootstrap/less/mixins.less";
+
+/* ==========================================================================
+   DJ-MENU styles
+   ========================================================================== */
+  
+#jm-allpage .dj-megamenu {
+  text-align: right;
+  li.dj-up {
+    float: right;
+    margin: 0 0 0 -1px;
+  }
+  li a.dj-up_a {
+    float: right;
+  }
+  li a.dj-up_a span {
+    float: right;
+  }
+  li a.dj-up_a img {
+    margin: 0 0 0 10px;
+  }
+  li div.dj-subwrap,
+  li:hover div.dj-subwrap li div.dj-subwrap,
+  li.hover div.dj-subwrap li div.dj-subwrap {
+    left: auto;
+    right: -9999px;
+  }
+  li:hover div.dj-subwrap,
+  li.hover div.dj-subwrap {
+    left: auto;
+    right: 0;
+  }
+  li:hover div.dj-subwrap li:hover > div.dj-subwrap,
+  li.hover div.dj-subwrap li.hover > div.dj-subwrap {
+    left: auto;
+    right: 100%;
+  }
+   li div.dj-subcol {
+    float: right;
+  }
+  li ul.dj-submenu > li > a img {
+    float: right;
+    margin: 0 0 5px 5px;
+  }
+  li ul.dj-submenu > li:hover > a,
+  li ul.dj-submenu > li.hover > a {
+    padding-left: 0;
+    padding-right: 8px;
+  }
+}
+
+/* opera fix scroller */
+
+noindex:-o-prefocus,
+.dj-megamenu li.dj-up {
+    overflow: hidden;
+}
+
+noindex:-o-prefocus,
+.dj-megamenu li.dj-up:hover,
+.dj-megamenu li.dj-up.hover {
+    overflow: visible;
+}
+
+noindex:-o-prefocus, .dj-megamenu li div.dj-subwrap, 
+.dj-megamenu li:hover div.dj-subwrap li div.dj-subwrap, 
+.dj-megamenu li.hover div.dj-subwrap li div.dj-subwrap {
+    right: auto;
+}
+
+/* ==========================================================================
+   LAYOUT styles
+   ========================================================================== */
+ 
+#jm-top-bar1 {
+  float: right;
+}
+
+#jm-top-bar2 {
+  float: left;
+}
+
+#jm-logo-sitedesc,
+#jm-logo-bar1,
+#jm-logo-bar2 {
+  float: right;
+  padding-left: 0;
+  padding-right: 30px;
+}
+
+#jm-logo-bar2 {
+  text-align: left;
+}
+
+#jm-font-switcher {
+  text-align: left;
+}  
+
+#jm-footer-left {
+  float: right;
+}
+
+#jm-footer-center {
+  float: right;
+}
+
+#jm-footer-right {
+  text-align: left;
+  float: left;
+}
+
+#jm-back-top {
+  margin-right: 0;
+  margin-left: 20px;
+  right: auto;
+  left: 0;
+}
+
+/* grid */
+
+.jm-grid {
+  [class*="span"] {
+    float: right;
+  }
+  .row > [class*="-in"] > [class*="-bg"],
+  .row-fluid > [class*="-in"] > [class*="-bg"] {
+    margin-left: 0;
+    margin-right: @JMbaseSpace;
+  }
+  .row,
+  .row-fluid {
+    margin-left: 0;
+    margin-right: -@JMbaseSpace;
+    width: auto;
+  }
+}
+
+/* ==========================================================================
+   MODULES styles
+   ========================================================================== */
+
+.jm-module .jm-title:after,
+.moduletable > h3:after {
+  left: auto;
+  right: 0;
+}
+
+.jm-module.badge-ms .jm-title:after,
+.jm-module.badge-ms .jm-title:before {
+  right: auto;
+  left: -12px;
+}
+
+.jm-module.badge-ms .jm-title:before {
+  border-width: 22px 0 0 12px;
+}
+
+.jm-module.badge-ms .jm-title:after {
+  border-width: 0 0 22px 12px;
+}
+
+.jm-module.box-ms .jm-title {
+  margin: 9px -11px 0 0;
+}
+
+.jm-module.box-ms .jm-title:after {
+  left: auto;
+  right: 0;
+  border-width: 10px 10px 0 0;
+}
+
+.jm-module.center-ms .jm-title:after {
+  left: 50%;
+  right: auto;
+  margin-left: -32px;
+}
+
+.jm-module-raw {
+  float: right;
+  margin-left: 0;
+  margin-right: 10px;
+}
+
+.jm-module-raw:first-child {
+  margin-right: 0;
+}
+
+/* logout topbar */
+
+#jm-top-bar {
+  div.login-greeting,
+  .logout-button {
+    float: right;
+  }
+  .logout-button .btn {
+    margin-left: 0!important;
+    margin-right: 10px!important;
+  }
+}
+
+/* search */
+
+.jm-search {
+  input.inputbox {
+    padding-right: 10px;
+    padding-left: 30px;
+  }
+  input.button,
+  button.button {
+    right: auto;
+    left: 12px;
+  }
+}
+
+/* contact-ps */
+
+.contact-ps .control-group .control-label {
+  text-align: right;
+}
+
+/** custom slide **/
+
+.jm-custom-slide h3 {
+  float: right;
+}
+
+.jm-custom-slide .jm-slide-price {
+  float: left;
+}
+
+.jm-custom-slide .jm-slide-desc {
+  clear: right;
+}
+
+/** custom discount **/
+
+.jm-custom-discount .jm-custom-left {
+  float: right;
+}
+
+.jm-custom-discount .jm-custom-right {
+  float: left;
+  text-align: left;
+}
+
+/** custom boxes **/
+
+.jm-row .jm-box {
+  float: right;
+}
+
+/** custom categories **/
+  
+.jm-custom-categories .jm-custom-box {
+  float: right;
+}
+
+/** cart-ms **/
+  
+.cart-ms .hikashop_cart {
+  padding-left: 0;
+  padding-right: 46px;
+}
+
+
+/* ==========================================================================
+   EDITOR OF LAYOUT styles
+   ========================================================================== */
+
+/** tooltip-icon **/
+
+.jm-tooltip-icon {
+  float: right;
+}
+
+.jm-block {
+  padding: 0 60px 0 0;
+  span {
+    right: 0;
+    left: auto;
+  }
+}
+  
+.jm-code {
+  border-left: none;
+  border-right: 5px solid @JMborder;
+}
+
+p.blue {
+  border-left: none;
+  border-right: 3px solid #BCE8F1;
+  padding: 0 10px 0 0;
+}
+
+p.green {
+  border-left: none;
+  border-right: 3px solid #D6E9C6;
+  padding: 0 10px 0 0;
+}
+
+p.red {
+  border-left: none;
+  border-right: 3px solid #EED3D7;
+  padding: 0 10px 0 0;
+}
+
+p.jmbadge,
+p.jmcalendar,
+p.jmchat,
+p.jmcheck,
+p.jmcloud,
+p.jmdirection,
+p.jmdivide,
+p.jmerror,
+p.jmfire,
+p.jmflag,
+p.jmheart,
+p.jmhome,
+p.jminfo,
+p.jmlist,
+p.jmmail,
+p.jmpeople,
+p.jmstar,
+p.jmstat {
+  padding-left: 0;
+  padding-right: 60px;
+  background-position: right top;
+}
+
+ul.jm-dark li {
+  background-image: url("../images/li-dark_rtl.png");
+}
+
+ul.jm-light li {
+  background-image: url("../images/li-light_rtl.png");
+}
+
+ul.jm-store-icons li {
+  padding: 7px 40px 7px 0;
+  background-position: right center;
+}
+
+.readmore2 {
+  padding: 8px 20px 8px 55px;
+}
+
+.readmore2:after {
+  right: auto;
+  left: 20px;
+}
+
+/** box **/
+  
+.jm-row {
+  margin-left: 0;
+  margin-right: -@JMbaseSpace;
+}
+
+.jm-box-in {
+  padding-left: 0;
+  padding-right: @JMbaseSpace;
+}
+
+  
+/** custom service **/
+
+.jm-custom-service .jm-row {
+  margin-left: 0;
+  margin-right: -@JMbaseSpace;
+}
+
+.jm-custom-service .jm-box {
+  float: right;
+}
+
+.jm-custom-service .jm-box .jm-box-in {
+  margin-left: 0; 
+  margin-right: @JMbaseSpace; 
+}
+
+.jm-custom-service .jm-box h3 {
+  padding: 7px 40px 7px 0;
+  background-position: right center;
+}
+
+/* ==========================================================================
+   JOOMLA COMPONENT styles
+   ========================================================================== */
+  
+//all articles
+.article-info a {
+  display: inline-block;
+}
+
+.content_vote label {
+  margin: 0 0 0 5px;
+}
+
+.badge {
+  display: inline-block;
+}
+
+//article categories
+.categories-list .collapse {
+  padding: 0 20px 0 0;
+}
+
+//category blog
+figure.pull-left {
+  margin-left: @JMbaseSpace;
+  margin-right: 0;
+}
+
+figure.pull-right {
+  margin-right: @JMbaseSpace;
+  margin-left: 0;
+}
+
+//item image
+.pull-left.item-image {
+  margin-left: @JMbaseSpace;
+  margin-right: 0;
+}
+
+.pull-right.item-image {
+  margin-right: @JMbaseSpace;
+  margin-left: 0;
+}
+
+//article category list
+.category-list {
+  .filters .btn-group label {
+    margin: 0 0 0 5px;
+  }
+}
+
+//contact single category
+.contact-category .btn-group span.label {
+  margin-right: 0;
+  margin-left: 10px;
+  display: inline-block;
+}
+
+//single contact
+.contact-position,
+.contact-address {
+  .jicons-text {
+    margin-right: 0;
+    margin-left: 10px;
+    text-align: right;
+  }
+  .jicons-icons {
+    margin-right: 0;
+    margin-left: 10px;
+    text-align: right;
+  }
+}
+
+//List Contacts in a Category
+.contact-category {
+  //contact list
+  ul.list-striped > li {
+    > .pull-right {
+      margin-right: 10px;
+      margin-left: 0;
+    }
+  }
+}
+
+//List Newsfeeds in a Category
+.newsfeed-category {
+  .cat-children {
+    > ul > li {
+      > ul {
+        > li {
+          margin-right: @JMbaseSpace;
+          margin-left: 0;
+        }
+      }
+    }
+    .newsfeed-count {
+      dt,
+      dd {
+        float: right;
+      }
+    }
+  }
+}
+
+//Single News Feed
+.img-intro-left {
+  float: right;
+  margin-left: @JMbaseSpace;
+  margin-right: 0;
+}  
+
+.img-intro-right {
+  float: left;
+  margin-right: @JMbaseSpace;
+  margin-left: 0;
+}  
+
+//Search Results
+.search {
+  #searchForm {
+    .form-limit {
+      float: right;
+    }
+    .counter {
+      float: left;
+    }
+  }
+  .phrases-box,
+    fieldset.only {
+      label {
+      margin-left: 10px;
+      margin-right: 0;
+    }
+  } 
+}
+
+//Smart Search
+.finder {
+  ul#finder-filter-select-dates li.filter-date {
+    text-align: right;
+    select.filter-date-operator {
+      margin-left: 10px;
+      margin-right: 0;
+    }
+  }
+  .search-pagination {
+    .search-pages-counter {
+      float: left;
+    }
+  }
+}
+
+//List Web Links in a Category
+.weblink-category {
+  .cat-children {
+    > ul > li {
+      > ul {
+        > li {
+          margin-right: @JMbaseSpace;
+          margin-left: 0;
+        }
+      }
+    }
+    .weblink-count {
+      dt,
+      dd {
+        float: right;
+      }
+    }
+  }
+}
+
+//tag-category
+.tag-category .form-inline label {
+  margin-right: 0;
+  margin-left: 10px;
+} 
+
+.tags .label-info {
+  display: inline-block;
+}
+
+//article-index
+.article-index {
+  margin-right: 10px;
+  margin-left: 0;
+}
+
+/** choosen **/
+  
+.chzn-container {
+  text-align: right;
+}  
+
+#jm-allpage .chzn-container-multi .chzn-choices li {
+  float: right;
+}
+
+#jm-allpage .chzn-container-single .chzn-single {
+  padding: 0 8px 0 0;
+}
+
+#jm-allpage .chzn-container-single .chzn-single span {
+  margin-right: 0;
+  margin-left: 26px;
+}
+
+#jm-allpage .chzn-container-single .chzn-single div {
+  right: auto;
+  left: 6px;
+}
+
+/* chzn fix */
+
+#jm-allpage .chzn-container .chzn-drop,
+#jm-allpage .chzn-container-single.chzn-container-single-nosearch .chzn-search {
+  left: auto;
+  right: -9999px;
+}
+
+#jm-allpage .chzn-container.chzn-with-drop .chzn-drop,
+.chzn-container-single.chzn-container-single-nosearch.chzn-with-drop .chzn-search {
+  left: auto;
+  right: 0;
+}
+
+/* ==========================================================================
+   JOOMLA MODULES styles
+   ========================================================================== */
+
+//newsflash module
+.newsflash {
+  .readmore {
+    float: left;
+  }
+}
+
+//search module
+.form-search {
+  label.finder {
+    padding: 0 0 0 10px;
+  }
+}
+
+/* ==========================================================================
+   BOOTSTRAP OVERRIDE styles
+   ========================================================================== */
+
+p.readmore,
+p.mod-articles-category-readmore {
+  text-align: left;
+}
+
+//readmore
+p.readmore a,
+a.readmore,
+.mod-articles-category-readmore a {
+  padding: 7px 16px 7px 35px;
+  &:after {
+    right: auto;
+    left: 13px;
+    background-image: url("../images/readmore_rtl.png");
+    background-position: left center;
+  }
+}
+
+// Navs
+// --------------------------
+
+/** default module menu **/
+
+.nav.menu{
+  > li > a,
+  > li > span.separator {
+    padding-left: 10px;
+    padding-right: 0;
+    .transition(padding-right 0.2s ease-in);  
+  }
+  > li > a:hover,
+  > li.active > a,
+  > li > span.separator:hover,
+  > li.active > span.separator {
+      padding-right: 10px;
+      padding-left: 0;
+  }
+  li a:after,
+  li span.separator:after {
+    background-position: left center;
+    right: auto;
+    left: 10px;
+  }
+  > li.parent > a:after,
+  > li.parent > span.separator:after {
+    background-image: url("../images/parent_rtl.png");  
+  }
+  ul li a,
+  ul li span.separator {
+    background-image: url("../images/menu-li_rtl.png");
+    background-position: right center;
+    padding-left: 10px;
+    padding-right: 37px;
+  }
+  > li.parent > a:hover:after,
+  > li.parent.active > a:after,
+  > li.parent > span.separator:hover:after,
+  > li.parent.active > span.separator:after {
+    background-image: url("../images/parent-white_rtl.png");    
+  }
+  > li > ul > li > a:hover,
+  > li > ul > li.active > a,
+  > li > ul > li > span.separator:hover,
+  > li > ul > li.active > span.separator  {
+    background-image: url("../images/menu-li-white_rtl.png");
+  }
+  ul ul {
+    padding-left: 0;
+    padding-right: 17px;
+  }
+}
+
+/** footer-mod menu **/
+  
+#jm-footer-mod .nav.menu {
+  ul li a,
+  ul li span.separator {
+    background-image: url("../images/menu-li-white_rtl.png");
+  }
+}
+
+#jm-footer-mod .jm-module.box-ms .nav.menu {
+  ul li a,
+  ul li span.separator {
+    background-image: url("../images/menu-li_rtl.png");
+  }
+  > li > ul > li > a:hover,
+  > li > ul > li.active > a,
+  > li > ul > li > span.separator:hover,
+  > li > ul > li.active > span.separator  {
+    background-image: url("../images/menu-li-white_rtl.png");
+  }
+}
+
+/** vertical menu **/
+  
+ul.menu.vertical {
+  li a,
+  li span.separator {
+    margin: 0 10px 0 0;
+    padding: 0 10px 0 0;
+    border-left: none;
+    border-right: 1px solid @JMverticalMenuBorderColor;
+  }
+}
+
+#jm-footer-mod ul.menu.vertical {
+  li a,
+  li span.separator {
+    border-left: none;
+    border-right: 1px solid @JMfootermodVerticalMenuBorder;
+  }
+}
+
+#jm-top-bar2 ul.menu.vertical {
+  li a,
+  li span.separator {
+    border-left: none;
+    border-right: 1px solid @JMtopbar2VerticalMenuBorder;
+  }
+}
+
+/** brackets **/
+
+.nav.menu.brackets {
+  ul li a,
+  ul li span.separator {
+    background-position: right center;
+    padding: 3px 37px 3px 10px;
+  }
+  > li > ul > li > a:hover, 
+  > li > ul > li.active > a, 
+  > li > ul > li > span.separator:hover, 
+  > li > ul > li.active > span.separator {
+    background-image: url("../images/menu-li_rtl.png"); 
+  }
+  > li > a::before,
+  > li > span.separator::before {
+    content: ']';
+  }
+  > li > a::after,
+  > li > span.separator::after {
+    content: '[';
+  }
+}
+
+#jm-footer-mod ul.menu.brackets {
+  ul li a,
+  ul li span.separator {
+    background-image: url("../images/menu-li_rtl.png");
+  }
+  > li > ul > li > a:hover, 
+  > li > ul > li.active > a, 
+  > li > ul > li > span.separator:hover, 
+  > li > ul > li.active > span.separator {
+    background-image: url("../images/menu-li_rtl.png"); 
+  }
+}
+
+#jm-footer-mod .jm-module.box-ms .nav.menu.brackets {
+  > li > ul > li > a:hover, 
+  > li > ul > li.active > a, 
+  > li > ul > li > span.separator:hover, 
+  > li > ul > li.active > span.separator {
+    background-image: url("../images/menu-li_rtl.png"); 
+  }
+}
+
+// Template details
+// --------------------------
+
+.accordion .accordion-group {
+  .accordion-heading {
+     a {
+      background: url('../images/plus.png') no-repeat left center;
+    }
+  }
+}
+
+.pane-sliders div.panel {
+  h3.title a {
+    background: url('../images/plus.png') no-repeat left center;
+  }
+}
+
+.nav-tabs {
+  > li {
+    float: right;
+  } 
+}
+
+dl.tabs {
+  dt.tabs {
+    float: right;
+  }
+}
+
+table.category {
+  th, 
+  td {
+    text-align: right;
+  }
+}
+
+ul li {
+  padding: 0 12px 0 0;
+  background-position: right 7px;
+}
+
+// Bootstrap values
+// ---------------------
+ 
+//fix
+.input-append.input-prepend {
+  .btn + .btn {
+    .border-radius(@inputBorderRadius 0 0 @inputBorderRadius);
+  }
+}
+
+.input-prepend.input-append .add-on:last-child, .input-prepend.input-append .btn:last-child, .input-prepend.input-append input:last-child {
+  .border-radius(@inputBorderRadius 0 0 @inputBorderRadius);
+}
+
+.input-prepend.input-append .add-on:first-child, .input-prepend.input-append .btn:first-child {
+  .border-radius(0 @inputBorderRadius @inputBorderRadius 0);
+}
+
+.input-append .add-on:last-child, .input-append .btn:last-child {
+  .border-radius(@inputBorderRadius 0 0 @inputBorderRadius);
+}
+
+.input-append input, .input-append select, .input-append .uneditable-input {
+  .border-radius(0 @inputBorderRadius @inputBorderRadius 0);
+}
+
+.btn-toolbar a.btn:first-child {
+  margin-left: 5px;
+}
+
+.nav-tabs:before, .nav-tabs:after, .nav-pills:before, .nav-pills:after {
+  content: "";
+  display: table;
+  line-height: 0;
+}
+
+.nav-tabs:after, .nav-pills:after {
+  clear: both;
+}

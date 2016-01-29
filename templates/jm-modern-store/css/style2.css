@@ -1,0 +1,393 @@
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.clearfix:after {
+  clear: both;
+}
+.hide-text {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+.input-block-level {
+  display: block;
+  width: 100%;
+  min-height: ;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.dj-megamenu li:hover a.dj-up_a,
+.dj-megamenu li.hover a.dj-up_a,
+.dj-megamenu li.active a.dj-up_a {
+  border-top: 1px solid #2D597F;
+}
+.dj-megamenu li ul.dj-submenu > li:hover > a,
+.dj-megamenu li ul.dj-submenu > li.hover > a,
+.dj-megamenu li ul.dj-submenu > li > a.active {
+  border-bottom: 1px solid #2D597F;
+}
+.dj-megamenu li ul.dj-subtree > li > a:hover,
+.dj-megamenu li ul.dj-subtree > li.active > a {
+  color: #2D597F;
+}
+.jm-module .jm-title:after,
+.moduletable > h3:after {
+  background: #2D597F;
+}
+.jm-custom-slide h3 a:hover {
+  color: #2D597F;
+}
+.jm-custom-categories .jm-custom-box-in {
+  background: #2D597F;
+}
+.nav.menu > li > a:hover,
+.nav.menu > li.active > a,
+.nav.menu > li > span.separator:hover,
+.nav.menu > li.active > span.separator,
+.nav.menu > li > ul > li > a:hover,
+.nav.menu > li > ul > li.active > a,
+.nav.menu > li > ul > li > span.separator:hover,
+.nav.menu > li > ul > li.active > span.separator {
+  background-color: #2D597F;
+}
+.nav.menu ul ul li > a:hover,
+.nav.menu ul ul li.active > a,
+.nav.menu ul ul li > span.separator:hover,
+.nav.menu ul ul li.active > span.separator,
+#jm-footer-mod .nav.menu ul ul li > a:hover,
+#jm-footer-mod .nav.menu ul ul li.active > a,
+#jm-footer-mod .nav.menu ul ul li > span.separator:hover,
+#jm-footer-mod .nav.menu ul ul li.active > span.separator,
+#jm-footer-mod .jm-module.box-ms .nav.menu ul ul li > a:hover,
+#jm-footer-mod .jm-module.box-ms .nav.menu ul ul li.active > a,
+#jm-footer-mod .jm-module.box-ms .nav.menu ul ul li > span.separator:hover,
+#jm-footer-mod .jm-module.box-ms .nav.menu ul ul li.active > span.separator {
+  color: #2D597F;
+}
+.nav.menu.vertical > li > a:hover,
+.nav.menu.vertical > li.active > a,
+.nav.menu.vertical > li > span.separator:hover,
+.nav.menu.vertical > li.active > span.separator,
+#jm-footer-mod .nav.menu.vertical > li > a:hover,
+#jm-footer-mod .nav.menu.vertical > li.active > a,
+#jm-footer-mod .nav.menu.vertical > li > span.separator:hover,
+#jm-footer-mod .nav.menu.vertical > li.active > span.separator,
+#jm-footer-mod .jm-module.box-ms .nav.menu.vertical > li > a:hover,
+#jm-footer-mod .jm-module.box-ms .nav.menu.vertical > li.active > a,
+#jm-footer-mod .jm-module.box-ms .nav.menu.vertical > li > span.separator:hover,
+#jm-footer-mod .jm-module.box-ms .nav.menu.vertical > li.active > span.separator,
+#jm-top-bar2 .nav.menu.vertical > li > a:hover,
+#jm-top-bar2 .nav.menu.vertical > li.active > a,
+#jm-top-bar2 .nav.menu.vertical > li > span.separator:hover,
+#jm-top-bar2 .nav.menu.vertical > li.active > span.separator {
+  color: #2D597F;
+}
+.nav.menu.brackets > li > a:hover,
+.nav.menu.brackets > li.active > a,
+.nav.menu.brackets > li > span.separator:hover,
+.nav.menu.brackets > li.active > span.separator,
+.nav.menu.brackets > li > ul > li > a:hover,
+.nav.menu.brackets > li > ul > li.active > a,
+.nav.menu.brackets > li > ul > li > span.separator:hover,
+.nav.menu.brackets > li > ul > li.active > span.separator,
+#jm-footer-mod .nav.menu.brackets > li > a:hover,
+#jm-footer-mod .nav.menu.brackets > li.active > a,
+#jm-footer-mod .nav.menu.brackets > li > span.separator:hover,
+#jm-footer-mod .nav.menu.brackets > li.active > span.separator,
+#jm-footer-mod .nav.menu.brackets > li > ul > li > a:hover,
+#jm-footer-mod .nav.menu.brackets > li > ul > li.active > a,
+#jm-footer-mod .nav.menu.brackets > li > ul > li > span.separator:hover,
+#jm-footer-mod .nav.menu.brackets > li > ul > li.active > span.separator,
+#jm-footer-mod .jm-module.box-ms .nav.menu.brackets > li > a:hover,
+#jm-footer-mod .jm-module.box-ms .nav.menu.brackets > li.active > a,
+#jm-footer-mod .jm-module.box-ms .nav.menu.brackets > li > span.separator:hover,
+#jm-footer-mod .jm-module.box-ms .nav.menu.brackets > li.active > span.separator,
+#jm-footer-mod .jm-module.box-ms .nav.menu.brackets > li > ul > li > a:hover,
+#jm-footer-mod .jm-module.box-ms .nav.menu.brackets > li > ul > li.active > a,
+#jm-footer-mod .jm-module.box-ms .nav.menu.brackets > li > ul > li > span.separator:hover,
+#jm-footer-mod .jm-module.box-ms .nav.menu.brackets > li > ul > li.active > span.separator {
+  color: #2D597F;
+}
+a {
+  color: #2D597F;
+}
+::selection {
+  background: #2D597F;
+  color: #ffffff;
+}
+::-webkit-selection {
+  background: #2D597F;
+  color: #ffffff;
+}
+::-moz-selection {
+  background: #2D597F;
+  color: #ffffff;
+}
+#jm-allpage .label-info[href],
+#jm-allpage .badge-info[href],
+#jm-allpage .label-info,
+#jm-allpage .badge-info {
+  color: #ffffff !important;
+  background: #2D597F;
+}
+#jm-allpage .label-info[href]:hover,
+#jm-allpage .badge-info[href]:hover,
+#jm-allpage .label-info:hover,
+#jm-allpage .badge-info:hover {
+  background: #3a73a5;
+}
+ul li {
+  background-image: url("../images/style2/li.png");
+}
+p.readmore a,
+a.readmore,
+.mod-articles-category-readmore a {
+  background: #2D597F;
+}
+.btn,
+a.button,
+input.button,
+button.button,
+input[type="submit"],
+button[type="submit"],
+button[type="reset"],
+button.reset-value {
+  background: #2D597F;
+}
+.pager li > a,
+.pager li > span {
+  background: #2D597F;
+}
+div.pagination ul li a.pagenav {
+  background: #2D597F;
+}
+div.pagination ul li.pagination-start a.pagenav,
+div.pagination ul li.pagination-prev a.pagenav,
+div.pagination ul li.pagination-next a.pagenav,
+div.pagination ul li.pagination-end a.pagenav {
+  color: #2D597F;
+}
+.accordion .accordion-group .accordion-heading:hover a,
+.accordion .accordion-group .accordion-heading a.active {
+  color: #2D597F;
+}
+.pane-sliders div.panel h3.title:hover a {
+  color: #2D597F;
+}
+.pane-sliders div.panel h3.title.pane-toggler-down a {
+  color: #2D597F;
+  background-image: url("../images/style2/minus.png");
+}
+#jm-allpage .nav-tabs > li:hover > a,
+#jm-allpage .nav-tabs > li.active > a {
+  border-bottom: 1px solid #2D597F;
+}
+dl.tabs dt.tabs.closed:hover,
+dl.tabs dt.tabs.open {
+  border-bottom: 1px solid #2D597F;
+}
+.page-header h2 a:hover,
+h2.item-title a:hover,
+.cat-children > h3 a:hover,
+.contact-category > h2 a:hover,
+.weblink-category > h2 a:hover,
+.newsfeed > h2 a:hover,
+.newsfeed-category > h2 a:hover,
+.tag-category h2 a:hover {
+  color: #2D597F;
+}
+.dropdown-menu li > a:hover,
+.dropdown-menu li > a:focus,
+.dropdown-submenu:hover > a,
+.dropdown-menu .active > a,
+.dropdown-menu .active > a:hover {
+  background: #2D597F;
+}
+.readmore2 {
+  background: #2D597F;
+  border-bottom-color: #173E60;
+}
+.readmore2:active {
+  background: #2D597F;
+}
+.dj-cat-title:after,
+.dj-slide-title + .dj-slide-description:before {
+  background: #2D597F;
+}
+#jm-allpage .dj-galleryGrid .dj-slide:hover img.dj-image {
+  border: 1px solid #2D597F !important;
+}
+#jm-allpage .dj-readmore-wrapper a {
+  border: 1px solid #2D597F !important;
+  color: #2D597F !important;
+}
+#jm-allpage .dj-readmore-wrapper a:after {
+  background: url('../images/style2/dj-readmore.png') no-repeat;
+}
+#jm-allpage .dj-readmore-wrapper a:hover {
+  background: #2D597F !important;
+}
+.dj-mslider .dj-load-button,
+.djslider-loader .load-button {
+  background: #2D597F !important;
+}
+.dj-mslider .dj-load-button.dj-load-button-active,
+.djslider-loader .load-button.load-button-active {
+  border: 2px solid #2D597F !important;
+}
+.dj-slideshow .dj-load-button-active,
+.dj-slideshow .dj-load-button:hover,
+#jm-allpage .nivo-controlNav a.active,
+#jm-allpage .nivo-controlNav a:hover,
+.box_skitter .image_number_select,
+.box_skitter .image_number:hover {
+  background: #2D597F !important;
+}
+.dj-slideshowThumbs .dj-load-button:hover img,
+.dj-slideshowThumbs .dj-load-button-active img {
+  border: 1px solid #2D597F !important;
+}
+.dj-tabber .dj-tab-active {
+  background: #2D597F !important;
+}
+.dj-tabber .dj-tabs-right .dj-tab-indicator {
+  background: url('../images/style2/dj-tab-indicator-left.png') right center !important;
+}
+.dj-tabber .dj-tabs-left .dj-tab-indicator {
+  background: url('../images/style2/dj-tab-indicator-right.png') left center !important;
+}
+.slider-ms .jm-custom-slide h3 a {
+  color: #2D597F !important;
+}
+.navigation-ms img.prev-button:hover,
+.navigation-ms img.dj-prev:hover {
+  background-image: url('../images/style2/prev.png');
+}
+.navigation-ms img.next-button:hover,
+.navigation-ms img.dj-next:hover {
+  background-image: url('../images/style2/next.png');
+}
+.navigation-ms img.play-button:hover,
+.navigation-ms img.dj-play:hover {
+  background-image: url('../images/style2/play.png');
+}
+.navigation-ms img.pause-button:hover,
+.navigation-ms img.dj-pause:hover {
+  background-image: url('../images/style2/pause.png');
+}
+.category-view h4:after,
+.featured-view h4:after,
+.latest-view h4:after,
+.topten-view h4:after,
+.recent-view h4:after,
+.browse-view > h1:after,
+.productdetails-view span.title:after,
+.productdetails-view .customer-reviews > h4:after,
+.productdetails-view .customer-reviews > form > h4:after,
+.productdetails-view .product-related-products h4:after,
+.productdetails-view .product-related-categories h4:after {
+  background: #2D597F;
+}
+.productdetails-view .product-related-products h4:after,
+.productdetails-view .product-related-categories h4:after {
+  background: #ff5a5c;
+}
+.featured-view .product h2 a:hover,
+.latest-view .product h2 a:hover,
+.topten-view .product h2 a:hover,
+.recent-view .product h2 a:hover,
+.product-related-products .product h2 a:hover,
+.browse-view .product h2 a:hover,
+.vmproduct h3 a:hover {
+  color: #2D597F !important;
+}
+.featured-view .product-price div.PricesalesPrice .PricesalesPrice,
+.latest-view .product-price div.PricesalesPrice .PricesalesPrice,
+.topten-view .product-price div.PricesalesPrice .PricesalesPrice,
+.recent-view .product-price div.PricesalesPrice .PricesalesPrice,
+.product-related-products .product-price div.PricesalesPrice .PricesalesPrice,
+.browse-view .product-price div.PricesalesPrice .PricesalesPrice,
+.vmproduct .product-price div.PricesalesPrice .PricesalesPrice {
+  background: #2D597F;
+}
+a.product-details {
+  background: #2D597F;
+}
+.category-view .category .spacer,
+.product-related-categories .product-field-display {
+  background: #2D597F;
+}
+.orderlistcontainer div.orderlist div:hover a {
+  color: #2D597F;
+}
+.manufacturer-view-default .spacer:hover h2 a {
+  color: #2D597F;
+}
+.manufacturer-details-view .manufacturer-email {
+  background: url("../images/style2/mail.png") no-repeat left center;
+}
+.manufacturer-details-view .manufacturer-url {
+  background: url("../images/style2/web.png") no-repeat left center;
+}
+.manufacturer-product-link a {
+  background: #2D597F;
+}
+.vm-orderdone-view a.vm-button-correct {
+  background: #2D597F;
+}
+#ui-tabs ul#tabs li:hover,
+#ui-tabs ul#tabs li.current {
+  border-bottom: 1px solid #2D597F;
+}
+.vendor-view-default .row .spacer:hover h2 a {
+  color: #2D597F;
+}
+a.ask-a-question {
+  background: url("../images/style2/askabout.png") no-repeat right center;
+}
+.vmmanufacturer > li > a:hover,
+.vmmanufacturer > div > a:hover {
+  color: #2D597F;
+}
+ul.VMmenu > li:hover > div > a,
+ul.VMmenu > li.VmOpen > div > a,
+ul.VMmenu > li.active > div > a {
+  background-color: #2D597F;
+}
+ul.VMmenu ul.menu > li.active > div > a,
+ul.VMmenu ul.menu > li.VmOpen > div > a,
+#jm-footer-mod ul.VMmenu ul.menu > li.active > div > a,
+#jm-footer-mod ul.VMmenu ul.menu > li.VmOpen > div > a,
+#jm-footer-mod .box-ms ul.VMmenu ul.menu > li.active > div > a,
+#jm-footer-mod .box-ms ul.VMmenu ul.menu > li.VmOpen > div > a {
+  color: #2D597F;
+}
+ul.VMmenu li ul.menu li a:hover {
+  color: #2D597F !important;
+}
+.vmCartModule .show_cart a {
+  background: #2D597F;
+}
+.cart-horizontal .vmCartModule {
+  background: url("../images/style2/addtocart.png") no-repeat left center;
+}
+.product .addtocart-area input.addtocart-button,
+.vmproduct .addtocart-area input.addtocart-button {
+  background: url("../images/style2/addtocart2.png") no-repeat right center;
+}
+.ratingbox {
+  background: url("../images/style2/color-stars.png") repeat-x 0 bottom !important;
+}
+.ratingbox div,
+.ratingbox span {
+  background: url("../images/style2/color-stars.png") repeat-x;
+}

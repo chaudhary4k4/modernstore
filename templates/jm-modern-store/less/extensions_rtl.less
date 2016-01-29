@@ -1,0 +1,744 @@
+/*--------------------------------------------------------------
+# Copyright (C) joomla-monster.com
+# License: http://www.joomla-monster.com/license.html Joomla-Monster Proprietary Use License
+# Website: http://www.joomla-monster.com
+# Support: info@joomla-monster.com
+---------------------------------------------------------------*/
+
+/* ==========================================================================
+   VARIABLES import
+   ========================================================================== */
+  
+@import "template_variables.less";
+
+/* ==========================================================================
+   MIXINS import
+   ========================================================================== */
+  
+@import "template_mixins.less";
+@import "../../../plugins/system/jmframework/includes/assets/template/bootstrap/less/mixins.less";
+
+/* ==========================================================================
+   EXTENSIONS styles
+   ========================================================================== */
+
+/* DJMEDIATOOLS */
+
+.dj-slide-desc-text ul li {
+  text-align: right;
+}
+
+/* album View */
+
+#djmediatools a.dj-category {
+    float: right !important;
+}
+
+.dj-galleryGrid .dj-slide {
+    float: right !important;
+}
+
+/* readmore */
+
+#jm-allpage .dj-readmore-wrapper a {
+  padding: 7px 15px 7px 30px;
+}
+
+#jm-allpage .dj-readmore-wrapper a:after {
+  right: auto;
+  left: 10px;
+}
+
+/* slider */
+
+.djslider-loader {
+    direction: ltr !important;
+}
+
+.djslider-loader .navigation-container-custom {
+    direction: rtl !important;
+}
+
+/* slideshow with thumbnails */
+
+.dj-slideshowThumbs .dj-indicators-in {
+    left: auto !important;
+    right: 0 !important;
+}
+
+.dj-slideshowThumbs .dj-load-button {
+    float: right !important;
+    margin: 0 0 0 10px !important;
+}
+
+/* tabber */
+
+.dj-tabber .dj-tab img {
+    margin-right: 0 !important;
+    margin-left: 10px !important;
+}
+
+/* skitter */
+
+.box_skitter .info_slide {
+    left: auto;
+    right: 15px;
+}
+
+.box_skitter .info_slide .image_number {
+    float: right !important;
+}
+
+.skitter-square .prev_button,
+.skitter-square .next_button {
+    right: auto;
+}
+
+.skitter-square .prev_button {
+    left: 10px;
+}
+
+.skitter-square .next_button {
+    left: 65px;
+}
+
+/** nivo **/
+  
+#jm-allpage .slider-wrapper .nivo-controlNav {
+  left: auto;
+  right: 15px;
+}  
+
+/** custom slide **/
+
+.slider-ms .jm-custom-slide {
+  text-align: right;
+}
+  
+.slider-ms .jm-custom-slide a.readmore {
+  padding: 7px 16px 7px 25px;
+}
+
+.pagination-ms .djslider-loader .navigation-container-custom {
+  right: auto;
+  left: 0;
+}
+
+/** virtuemart-ms **/
+
+.dj-extra {
+  direction: rtl !important;
+  + .dj-slide-title {
+    text-align: right !important;
+  }
+}
+
+.virtuemart-ms {
+  .dj-extra {
+    .vmproduct {
+      .addtocart-area {
+        left: auto;
+        right: 0;
+      }
+    }
+  }
+  .dj-slide-desc-text {
+    text-align: right !important;
+  }
+}
+
+.dj-mslider,
+.djslider-loader {
+  .dj-extra .vmproduct .product-price div.PricesalesPrice > span {  
+    margin-right: 0;
+    margin-left: -10px;
+  }
+}
+
+/* VIRTUEMART */
+
+//cols
+.vm-col {
+  float: right;
+}
+
+//product price
+.featured-view .product-price, 
+.latest-view .product-price, 
+.topten-view .product-price, 
+.recent-view .product-price, 
+.product-related-products .product-price, 
+.browse-view .product-price,
+.vmproduct .product-price {
+  > div,
+  > .price-crossed {
+    &.PricesalesPrice {
+      .PricesalesPrice {
+        right: auto;
+        left: 0;
+      }
+    }
+    span[class*="Price"] {
+      float: left;
+    }
+  }
+}
+
+//addtocart
+.product .addtocart-area,
+.vmproduct .addtocart-area {
+  .addtocart-bar {
+    span.quantity-box {
+      float: right;
+    }
+    span.addtocart-button {
+      float: left;
+    }
+    input.quantity-input {
+      margin-right: 0;
+      margin-left: 15px;
+    }
+    input.addtocart-button {
+      padding: 0 0 0 40px;
+    }
+  }
+}
+
+
+//product fields
+.product-fields {
+  .radio {
+    padding-right: 0;
+    input[type="radio"] {
+      margin-left: 0;
+      margin-right: 5px;
+    }
+  }
+}  
+
+//product details button
+a.product-details {
+  padding: 7px 16px 7px 35px;
+  &::after {
+    right: auto;
+    left: 13px;
+    background-image: url("../images/readmore_rtl.png");
+    background-position: left center;
+  }
+}
+
+//ask question/call price
+div.ask-a-question {
+  text-align: left;
+}
+
+a.ask-a-question {
+  padding: 5px 0 5px 42px;
+}
+
+//ordering
+.orderby-displaynumber {
+  .display-number {
+    text-align: left;
+  }
+}
+
+.orderlistcontainer {
+  float: right;
+  margin: 0 0 0 20px;
+  .orderlist {
+    left: auto;
+    right: 0;
+  }
+}
+
+//pagination
+.vm-page-counter {
+  float: left;
+}
+
+// VirtueMart Product Details
+// --------------------------------------------------
+
+//product navigation
+.product-neighbours {
+  a.next-page {
+    float: left;
+    padding: 0 0 0 10px;
+    &:after {
+      right: auto;
+      left: 0;
+    }
+  }
+  a.previous-page {
+    float: right;
+    padding: 0 10px 0 0;
+    &:before {
+      left: auto;
+      right: 0;
+    }
+  }
+}
+
+//back to category
+.back-to-category { 
+  a.product-details {
+    padding: 7px 35px 7px 16px;
+    &:after {
+      background-image: url("../images/readmore.png");
+      background-position: right center;
+      right: 13px;
+      left: auto;
+    }
+  }
+}
+
+.productdetails-view {
+  //image container
+  .vm-product-container .vm-product-media-container {
+    float: right;
+  }
+  //product details container
+  .spacer-buy-area {
+    padding-left: 0;
+    padding-right: @JMbaseSpace;
+  }
+  //product price
+  .spacer-buy-area .product-price {
+    a.ask-a-question {
+      float: left;
+    }
+    > div span {
+      display: inline-block;
+      &:first-child {
+        margin-left: 5px;
+      }
+    }
+  }
+  //product icons
+  .icons {
+    float: left;
+    margin: 0 30px 10px 10px;
+    img {
+      margin-left: 0;
+      margin-right: 5px;
+    }
+  }
+  //add to cart
+  .addtocart-area {
+    .addtocart-bar {
+      text-align: left;
+    }
+    label.quantity_box {
+      margin-right: 0;
+      margin-left: 15px;
+    }
+    input.quantity-input {
+      margin-right: 0;
+      margin-left: 15px;
+    }
+  }
+  //manufacturer
+  .manufacturer {
+    a, span {
+      display: inline-block;
+    }
+  }
+  //ask question
+  div.ask-a-question {
+    text-align: left;
+  }
+}
+
+//related products
+.product-related-products {
+  .product-field {
+    float: right;
+  }
+}
+//related categories
+.product-related-categories {
+  .product-field {
+    float: right;
+  }
+}
+
+//product reviews
+.customer-reviews {
+  > form > h4 span {
+    margin-left: 0;
+    margin-right: 8px;
+  } 
+  .list-reviews {
+    span.date {
+      float: left;
+      display: block;
+    }
+    blockquote {
+      margin: 20px 0;
+    }
+    a.details {
+      float: right;
+      padding: 0 0 0 10px;
+      &:after {
+        right: auto;
+        left: 0;
+      }
+    }
+  }
+}
+
+// Modals
+// --------------------------------------------------
+
+//ask a question/recommend
+.ask-a-question-view {
+  .product-summary {
+    h2 {
+      margin: 0 0 10px 20px;
+    }
+    .short-description {
+      margin: 0 0 0 20px;
+    }
+  }
+  div.submit {
+    > div:first-child {
+      text-align: left;
+    }
+    input.highlight-button {
+      float: right;
+    }
+  }
+  .formError {
+    left: 20px !important;
+    right: auto;
+  }
+}
+
+//cart modal
+#fancybox-wrap #fancybox-content {
+  a.showcart {
+    float: left;
+    padding: 0 0 0 10px;
+    &:after {
+      right: auto;
+      left: 0;
+    }
+  }  
+  a.continue_link {
+    float: right;
+    padding: 0 10px 0 0;
+    &:before {
+      left: auto;
+      right: 0;
+    }
+  }
+}
+
+//order details
+.modal .vm-orderdetails-view {
+  h2 {
+    margin: 0 0 10px 20px;
+  }
+}
+
+/* MANUFACTURER DETAILS
+--------------------------*/
+
+.manufacturer-details-view {
+  img {
+    float: left;
+    margin: 0 30px 10px 0;
+  }
+  .manufacturer-product-link a {
+    padding: 7px 16px 7px 35px;
+    &::after {
+      right: auto;
+      left: 13px;
+      background-image: url("../images/readmore_rtl.png");
+      background-position: left center;
+    }
+  }
+  .manufacturer-email,
+  .manufacturer-url {
+    padding: 0 25px 0 0;
+  }
+}
+
+
+// Cart View
+// --------------------------------------------------
+
+.cart-view {
+  //continue link
+  a.continue_link {
+    padding-left: 0;
+    padding-right: 10px;
+    &:before {
+      left: auto;
+      right: 0;
+    }
+  }
+  //login form
+  form#form-login {
+    input.button {
+      margin-left: 0;
+      margin-right: 15px;
+    }
+  }
+  form .width30 {
+    padding-right: 0;
+    padding-left: @JMbaseSpace;
+  }
+  #com-form-login-remember {
+    label {
+      margin-left: 0;
+      margin-right: 10px;
+    }
+  }
+  //billing and shipping information
+  .billto-shipto {
+    a.details {
+      padding-right: 0;
+      padding-left: 10px;
+      &:after {
+        right: auto; 
+        left: 0; 
+      }
+    }
+  }
+  //price list
+  table.cart-summary {
+    .cart-images img {
+      float: right;
+      margin: 0 0 0 10px;
+    }
+    td {
+      .vm-shipment-view,
+      .vm-payment-view {
+        .checkoutStep {
+          text-align: right;
+        }
+      }
+    }
+    .vmshipment_description,
+    .vmpayment_description {
+      margin-left: 0;
+      margin-right: 5px;
+    }  
+  }
+  //checkout button
+  .checkout-button-top {
+    text-align: left;
+  }
+}
+
+//seclect shipment/payment
+.vm-shipment-view,
+.vm-payment-view {
+  .buttonBar-right {
+    text-align: right;
+  }
+} 
+
+// Edit address
+// --------------------------------------------------
+
+.vm-editaddress-view {
+  //login form
+  form#form-login {
+    input.button {
+      margin-left: 0;
+      margin-right: 15px;
+    }
+  }
+  form .width30 {
+    padding-right: 0;
+    padding-left: @JMbaseSpace;
+  }
+  #com-form-login-remember {
+    label {
+      margin-left: 0;
+      margin-right: 10px;
+    }
+  }
+  .control-buttons {
+    button {
+      margin-right: 0;
+      margin-left: 5px;
+    }
+  }
+}
+
+td.key {
+  padding: 0 0 0 10px;
+}
+
+// List orders
+// --------------------------------------------------
+
+.vm-orderlist-view {
+  form .width30 {
+    padding-right: 0;
+    padding-left: @JMbaseSpace;
+  }
+  #com-form-login-remember {
+    label {
+      margin-left: 0;
+      margin-right: 10px;
+    }
+  }
+}
+
+table.adminlist {
+  th,
+  td {
+    text-align: right;
+  }
+}
+
+.vm-orderdetails-view {
+  a.link-listorders {
+    padding-left: 0;
+    padding-right: 10px;
+    &:before {
+      left: auto;
+      right: 0;
+    }
+  }
+  .spaceStyle > table td {
+    padding: 8px 0 8px 8px;
+  }
+}
+
+th[align="left"],
+td[align="left"] {
+  text-align: right !important;
+}
+
+// Account Maintenance
+// --------------------------------------------------
+
+.vm-edit-view {
+  .buttonBar-right {
+    text-align: right;
+  }
+  form#form-login {
+    input.button {
+      margin-left: 0;
+      margin-right: 15px;
+    }
+  }
+  form#com-form-login {
+    .width30 {
+      padding-right: 0;
+      padding-left: 10px;
+    }
+    #com-form-login-remember {
+      label {
+        margin-left: 0;
+        margin-right: 10px;
+      }
+    } 
+  }
+  table.admintable {
+    td {
+      padding: 8px 0 8px 8px;
+    }
+  }
+}
+
+// Category Module
+// --------------------------------------------------
+
+ul.VMmenu {
+  > li {
+    > div {
+      > a {
+        padding-left: 10px;
+        padding-right: 0;
+        .transition(padding-right 0.2s ease-in);
+      }
+      .VmArrowdown {
+        right: auto;
+        left: 10px;
+      }
+    }
+    &:hover,
+    &.VmOpen,
+    &.active {
+      > div > a {
+        padding-left: 0;
+        padding-right: 10px;
+      }
+    }
+  }
+  li ul.menu li a {
+    background-image: url("../images/menu-li_rtl.png");
+    background-position: right center;
+    padding-left: 10px;
+    padding-right: 37px;
+  }
+}
+
+#jm-footer-mod {
+  .box-ms ul.VMmenu {
+    li ul.menu li a {
+      background-image: url("../images/menu-li_rtl.png");
+    }
+  }
+}
+
+// Cart Module
+// --------------------------------------------------
+
+.vmCartModule {
+  .vm_cart_products {
+    .vmcontainer {
+      .product_row {
+        .subtotal_with_tax {
+          float: left;
+        }
+      }
+    }
+  }
+  .total {
+    float: left;
+  }
+  .total_products {
+    padding: 10px 0 0 10px;
+    float: right;
+  }
+  span {
+    display: inline-block;
+  }
+}
+
+.cart-horizontal .vmCartModule {
+  padding-left: 0;
+  padding-right: 46px;
+  .total {
+    float: right;
+    padding: 0 10px 0 0;  
+  }
+  .total_products {
+    margin-right: 0;
+    margin-left: 10px;
+  }
+}
+
+// Utility classes
+// --------------------------------------------------
+
+.floatright {
+  float: left;
+}
+
+.floatleft {
+  float: right;
+}
+
+.right, 
+.buttonBar-right {
+  text-align: left;
+}

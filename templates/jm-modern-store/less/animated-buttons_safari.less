@@ -1,0 +1,225 @@
+/*--------------------------------------------------------------
+# Copyright (C) joomla-monster.com
+# License: http://www.joomla-monster.com/license.html Joomla-Monster Proprietary Use License
+# Website: http://www.joomla-monster.com
+# Support: info@joomla-monster.com
+---------------------------------------------------------------*/
+
+/* ==========================================================================
+   VARIABLES import
+   ========================================================================== */
+  
+@import "template_variables.less";
+
+/* ==========================================================================
+   MIXINS import
+   ========================================================================== */
+
+@import "template_mixins.less";
+@import "../../../plugins/system/jmframework/includes/assets/template/bootstrap/less/mixins.less";
+
+/* ==========================================================================
+   EDITOR styles
+   ========================================================================== */
+
+/* select fix */
+
+select {
+    line-height: 30px;
+}
+
+/* image hovers */
+
+.dj-image-hover {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+
+.view {
+   border: 1px solid #e0e0e0;
+   overflow: hidden;
+   position: relative;
+   cursor: default;
+   max-width: 100%;
+   display: inline-block;
+}
+
+.view .mask,
+.view .content {
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   overflow: hidden;
+   top: 0;
+   left: 0;
+}
+
+.view img {
+   display: block;
+   position: relative;
+}
+
+.view h2 {
+   text-transform: uppercase;
+   text-align: center;
+   position: relative;
+   padding: 10px;
+   background: rgb(255, 255, 255);
+   background: rgba(255, 255, 255, 0.7);
+   margin: 20px 0 0 0 !important;
+}
+
+.view p {
+   padding: 10px;
+}
+
+.view a.readmore {
+  margin: 0;
+}
+
+/** third **/
+  
+.view-third img {
+   .transition(all 0.2s ease-in);
+}
+
+.view-third .mask {
+   background-color: rgb(221,221,221);
+   background-color: rgba(221,221,221,0.9);
+   .opacity(0);
+   .transition(all 0.2s 0.4s ease-in-out);
+}
+
+.view-third h2 {
+   .transition(all 0.2s ease-in-out);
+}
+
+.view-third p {
+   .transition(all 0.2s ease-in-out);
+}
+
+.view-third a.readmore {
+   .transition(all 0.2s ease-in-out);
+}
+
+.view-third:hover .mask {
+   .opacity(100);
+   .transition-delay(0s);
+}
+
+.view-third:hover h2 {
+   .transition-delay(0.5s);
+}
+
+.view-third:hover p {
+   .transition-delay(0.4s);
+}
+
+.view-third:hover a.readmore {
+   .transition-delay(0.3s);
+} 
+
+/** fifth **/
+  
+.view-fifth img {
+   .transition(all 0.3s ease-in-out);
+}
+
+.view-fifth .mask {
+   background-color: rgb(221,221,221);
+   background-color: rgba(221,221,221,0.9);
+   .opacity(100);
+   .transition(all 0.3s ease-in-out);
+}
+
+.view-fifth p {
+   .opacity(0);
+   .transition(all 0.2s linear);
+}
+
+.view-fifth:hover p {
+   .opacity(100);
+}
+
+/** eighth **/
+
+.view-eighth .mask {
+   background-color: rgb(221,221,221);
+   background-color: rgba(221,221,221,0.9);
+   top: -200px;
+   .opacity(0);
+   .transition(all 0.3s ease-out 0.5s);
+}
+
+.view-eighth h2 {
+   .transition(all 0.2s ease-in-out 0.1s);
+}
+
+.view-eighth p {
+   .transition(all 0.2s ease-in-out 0.2s);
+}
+
+.view-eighth a.readmore {
+   .transition(all 0.2s ease-in-out 0.3s);
+}
+
+.view-eighth:hover .mask {
+   .opacity(100);
+   top: 0px;
+   .transition-delay(0s);
+}
+
+.view-eighth:hover h2 {
+   .transition-delay(0.4s);
+}
+
+.view-eighth:hover p {
+   .transition-delay(0.2s);
+}
+
+.view-eighth:hover a.readmore {
+   .transition-delay(0s);
+}
+
+/** tenth **/
+  
+.view-tenth img {
+   .transition(all 0.7s ease-in-out);
+}
+
+.view-tenth .mask {
+   background-color: rgb(221,221,221);
+   background-color: rgba(221,221,221,0.9);
+   .transition(all 0.5s linear);
+   .opacity(0);
+}
+
+.view-tenth h2 {
+   .transition(all 0.5s linear);
+   .opacity(0);
+}
+
+.view-tenth p {
+   .opacity(0);
+   .transition(all 0.5s linear);
+}
+
+.view-tenth a.readmore {
+   .opacity(0);
+   .transition(all 0.5s linear);
+}
+
+.view-tenth:hover img {
+   .opacity(0);
+}
+
+.view-tenth:hover .mask {
+   .opacity(100);
+}
+
+.view-tenth:hover h2,
+.view-tenth:hover p,
+.view-tenth:hover a.readmore {
+   .opacity(100);
+}

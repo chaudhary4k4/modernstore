@@ -1,0 +1,484 @@
+/*--------------------------------------------------------------
+# Copyright (C) joomla-monster.com
+# License: http://www.joomla-monster.com/license.html Joomla-Monster Proprietary Use License
+# Website: http://www.joomla-monster.com
+# Support: info@joomla-monster.com
+---------------------------------------------------------------*/
+
+/* ==========================================================================
+   VARIABLES import
+   ========================================================================== */
+  
+@import "template_variables.less";
+
+@import "template_mixins.less";
+@import "../../../plugins/system/jmframework/includes/assets/template/bootstrap/less/mixins.less";
+
+/* ==========================================================================
+   STYLE1 RTL styles
+   ========================================================================== */
+
+// DJ Megamenu
+// -------------------------- 
+
+.dj-megamenu {
+  li:hover a.dj-up_a,
+  li.hover a.dj-up_a, 
+  li.active a.dj-up_a {
+    border-top: 1px solid @JMstyle1MegamenuBorderHover;
+  }
+  li ul.dj-submenu > li:hover > a,
+  li ul.dj-submenu > li.hover > a,
+  li ul.dj-submenu > li > a.active {
+    border-bottom: 1px solid @JMstyle1MegamenuBorderHover;
+  }
+  li ul.dj-subtree > li > a:hover,
+  li ul.dj-subtree > li.active > a {
+    color: @JMstyle1MegamenuFontColorHover;
+  }
+}
+
+// Modules
+// -------------------------- 
+
+.jm-module .jm-title:after,
+.moduletable > h3:after {
+  background: @JMstyle1ModuleTiteBorder;
+}
+
+.jm-custom-slide h3 a:hover {
+  color: @JMstyle1CustomslideFontColorHover;
+}
+
+.jm-custom-categories .jm-custom-box-in {
+  background: @JMstyle1CustomcategoriesBackground;  
+}
+
+// Menu
+// -------------------------- 
+
+.nav.menu {
+  > li > a:hover,
+  > li.active > a,
+  > li > span.separator:hover,
+  > li.active > span.separator,
+  > li > ul > li > a:hover,
+  > li > ul > li.active > a,
+  > li > ul > li > span.separator:hover,
+  > li > ul > li.active > span.separator  {
+    background-color: @JMstyle1MenuBackgroundHover;
+  }
+} 
+
+.nav.menu, 
+#jm-footer-mod .nav.menu,
+#jm-footer-mod .jm-module.box-ms .nav.menu {
+  ul ul li > a:hover,
+  ul ul li.active > a,
+  ul ul li > span.separator:hover,
+  ul ul li.active > span.separator {
+    color: @JMstyle1MenuFontColorHover;
+  }
+}
+
+.nav.menu.vertical,
+#jm-footer-mod .nav.menu.vertical,
+#jm-footer-mod .jm-module.box-ms .nav.menu.vertical,
+#jm-top-bar2 .nav.menu.vertical {
+  > li > a:hover,
+  > li.active > a,
+  > li > span.separator:hover,
+  > li.active > span.separator {
+    color: @JMstyle1MenuFontColorHover;
+  }
+}
+
+.nav.menu.brackets,
+#jm-footer-mod .nav.menu.brackets,
+#jm-footer-mod .jm-module.box-ms .nav.menu.brackets {
+  > li > a:hover,
+  > li.active > a,
+  > li > span.separator:hover,
+  > li.active > span.separator,
+  > li > ul > li > a:hover,
+  > li > ul > li.active > a,
+  > li > ul > li > span.separator:hover,
+  > li > ul > li.active > span.separator {
+    color: @JMstyle1MenuFontColorHover;
+  }
+}
+
+// Scaffolding
+// -------------------------- 
+
+a {
+  color: @JMstyle1Link;
+}
+
+::selection {
+  background: @JMstyle1Link;
+  color: @JMwhite;
+}
+::-webkit-selection {
+  background: @JMstyle1Link;
+  color: @JMwhite;
+}   
+::-moz-selection {
+  background: @JMstyle1Link;
+  color: @JMwhite;
+}
+
+/** template **/
+
+//tags
+#jm-allpage {
+  .label-info[href], .badge-info[href],
+  .label-info, .badge-info {
+    color: @JMwhite!important;
+    background: @JMstyle1;
+    &:hover {
+      background: lighten(@JMstyle1, 10%);
+    }
+  }
+}
+
+ul li {
+  background-image: url("../images/style1/li_rtl.png");
+}
+
+// Buttons & Readmore
+// -------------------------- 
+
+p.readmore a,
+a.readmore,
+.mod-articles-category-readmore a {
+  background: @JMstyle1ReadmoreBackground;
+}
+
+.btn,
+a.button,
+input.button,
+button.button,
+input[type="submit"],
+button[type="submit"],
+button[type="reset"],
+button.reset-value {
+  background: @JMstyle1ButtonBackground;
+}
+
+// Pagination
+// --------------------------
+
+.pager li {
+  > a, 
+  > span {
+    background: @JMstyle1PagerBackground;
+  }
+}
+
+div.pagination {
+  ul li a.pagenav {
+      background: @JMstyle1PaginationBackground;
+  }
+  ul li.pagination-start a.pagenav,
+  ul li.pagination-prev a.pagenav,
+  ul li.pagination-next a.pagenav,
+  ul li.pagination-end a.pagenav {
+    color: @JMstyle1PaginationLinkFontColor;
+  }
+}
+
+// Accordion & Tabs
+// -------------------------- 
+
+.accordion .accordion-group {
+  .accordion-heading:hover a,
+  .accordion-heading a.active {
+    color: @JMstyle1AccordionFontColorHover;
+  }
+}
+
+.pane-sliders div.panel {
+  h3.title:hover a {
+    color: @JMstyle1AccordionFontColorHover;
+  }
+  h3.title.pane-toggler-down a {
+    color: @JMstyle1AccordionFontColorHover;
+    background-image: url("../images/style1/minus.png");
+  }
+}
+
+#jm-allpage .nav-tabs {
+  > li:hover > a,
+  > li.active > a {
+    border-bottom: 1px solid @JMstyle1TabsBorderHover;
+  }
+}
+
+dl.tabs {
+  dt.tabs.closed:hover,
+  dt.tabs.open {
+    border-bottom: 1px solid @JMstyle1TabsBorderHover;
+  }
+}
+
+// Heading
+// -------------------------- 
+
+.page-header h2,
+h2.item-title,
+.cat-children > h3,
+.contact-category > h2,
+.weblink-category > h2,
+.newsfeed > h2,
+.newsfeed-category > h2,
+.tag-category h2 {
+  a:hover {
+    color: @JMstyle1HeadingFontColorHover;
+  }
+}
+
+// Dropdown
+// -------------------------- 
+
+.dropdown-menu li > a:hover,
+.dropdown-menu li > a:focus,
+.dropdown-submenu:hover > a,
+.dropdown-menu .active > a,
+.dropdown-menu .active > a:hover {
+  background: @JMstyle1ButtonDropdown;
+}
+
+// Editor
+// -------------------------- 
+
+.readmore2 {
+  background: @JMstyle1Readmore2Background;
+  border-bottom-color: @JMstyle1Readmore2Border;
+  &:active {
+    background: @JMstyle1Readmore2Background;
+  }
+} 
+
+// MEDIATOOLS
+// -------------------------- 
+
+.dj-cat-title:after,
+.dj-slide-title + .dj-slide-description:before {
+  background: @JMstyle1MediatoolsAlbumTitleBorder;
+}
+
+#jm-allpage .dj-galleryGrid .dj-slide:hover img.dj-image {
+  border: 1px solid @JMstyle1MediatoolsGalleryGridSlideBorderHover !important;
+}
+
+#jm-allpage {
+  .dj-readmore-wrapper a {
+    border: 1px solid @JMstyle1MediatoolsReadmoreBorder !important;
+    color: @JMstyle1MediatoolsReadmoreFontColor !important;
+  }
+  .dj-readmore-wrapper a:after {
+    background: url('../images/style1/dj-readmore.png') no-repeat;
+  }
+  .dj-readmore-wrapper a:hover {
+    background: @JMstyle1MediatoolsReadmoreBackgroundHover !important;
+  }
+}
+
+.dj-mslider .dj-load-button,
+.djslider-loader .load-button {
+  background: @JMstyle1MediatoolsPaginationColor !important;
+}
+
+.dj-mslider .dj-load-button.dj-load-button-active,
+.djslider-loader .load-button.load-button-active {
+  border: 2px solid @JMstyle1MediatoolsPaginationColor !important;
+}
+
+.dj-slideshow .dj-load-button-active,
+.dj-slideshow .dj-load-button:hover,
+#jm-allpage .nivo-controlNav a.active,
+#jm-allpage .nivo-controlNav a:hover,
+.box_skitter .image_number_select,
+.box_skitter .image_number:hover {
+  background: @JMstyle1MediatoolsPaginationColor !important; 
+}
+
+.dj-slideshowThumbs .dj-load-button:hover img,
+.dj-slideshowThumbs .dj-load-button-active img {
+  border: 1px solid @JMstyle1MediatoolsSlideshowThumbImageBorderHover !important; 
+}
+
+.dj-tabber .dj-tab-active {
+  background: @JMstyle1MediatoolsTabberTabBackgroundActive !important;   
+}
+
+.dj-tabber .dj-tabs-right .dj-tab-indicator {
+  background: url('../images/style1/dj-tab-indicator-left.png') right center !important;
+}
+
+.dj-tabber .dj-tabs-left .dj-tab-indicator {
+  background: url('../images/style1/dj-tab-indicator-right.png') left center !important;
+}
+
+.slider-ms .jm-custom-slide h3 a {
+  color: @JMstyle1MediatoolsCustomslideTitleColor !important;  
+}
+
+.navigation-ms {
+  img.prev-button:hover,
+  img.dj-prev:hover {
+    background-image: url('../images/style1/prev.png');
+  }
+  img.next-button:hover,
+  img.dj-next:hover {
+    background-image: url('../images/style1/next.png');
+  }
+  img.play-button:hover,
+  img.dj-play:hover {
+    background-image: url('../images/style1/play.png');
+  }
+  img.pause-button:hover,
+  img.dj-pause:hover {
+    background-image: url('../images/style1/pause.png');
+  }
+}
+
+// VIRTUEMART
+// -------------------------- 
+
+.category-view h4:after,
+.featured-view h4:after,
+.latest-view h4:after,
+.topten-view h4:after,
+.recent-view h4:after,
+.browse-view > h1:after,
+.productdetails-view span.title:after,
+.productdetails-view .customer-reviews > h4:after,
+.productdetails-view .customer-reviews > form > h4:after,
+.productdetails-view .product-related-products h4:after,
+.productdetails-view .product-related-categories h4:after {
+  background: @JMstyle1VirtuemartPageHeadingBackgroundColor;
+} 
+
+.productdetails-view .product-related-products h4:after,
+.productdetails-view .product-related-categories h4:after {
+  background: #ff5a5c;
+}
+
+.featured-view .product h2 a:hover, 
+.latest-view .product h2 a:hover, 
+.topten-view .product h2 a:hover, 
+.recent-view .product h2 a:hover, 
+.product-related-products .product h2 a:hover, 
+.browse-view .product h2 a:hover,
+.vmproduct h3 a:hover {
+  color: @JMstyle1VirtuemartProductTitleFontHoverColor !important;
+}
+
+.featured-view .product-price, 
+.latest-view .product-price, 
+.topten-view .product-price, 
+.recent-view .product-price, 
+.product-related-products .product-price, 
+.browse-view .product-price,
+.vmproduct .product-price {
+  div.PricesalesPrice {
+    .PricesalesPrice {
+      background: @JMstyle1VirtuemartProductPriceSalesBackgroundColor;
+    }
+  }
+}
+
+a.product-details {
+  background: @JMstyle1VirtuemartProductDetailsButtonBackgroundColor;  
+}
+
+.category-view .category .spacer,
+.product-related-categories .product-field-display {
+  background: @JMstyle1VirtuemartCategoryBackgroundColor;  
+}
+
+.orderlistcontainer div.orderlist div:hover a {
+  color: @JMstyle1VirtuemartOrderingListFontHoverColor;
+}
+
+.manufacturer-view-default .spacer:hover h2 a {
+  color: @JMstyle1VirtuemartManufacturerHeading2FontHoverColor;
+}
+
+.manufacturer-details-view {
+  .manufacturer-email {
+    background: url("../images/style1/mail.png") no-repeat right center;
+  }
+  .manufacturer-url {
+    background: url("../images/style1/web.png") no-repeat right center;
+  }
+}
+
+.manufacturer-product-link a {
+  background: @JMstyle1VirtuemartManufacturerButtonBackgroundColor;    
+}
+
+.vm-orderdone-view a.vm-button-correct {
+  background: @JMstyle1VirtuemartCartOrderDoneButtonBackgroundColor;  
+}
+
+#ui-tabs ul#tabs li:hover,
+#ui-tabs ul#tabs li.current {
+  border-bottom: 1px solid @JMstyle1VirtuemartTabsBorderHoverColor;
+}
+
+.vendor-view-default .row .spacer:hover h2 a {
+  color: @JMstyle1VirtuemartVendorHeading2FontHoverColor;
+}
+
+a.ask-a-question {
+  background: url("../images/style1/askabout.png") no-repeat left center;  
+}
+
+.vmmanufacturer > li > a:hover,
+.vmmanufacturer > div > a:hover {
+  color: @JMstyle1VirtuemartManufacturerHeading2FontHoverColor; 
+}
+
+ul.VMmenu > li:hover > div > a,
+ul.VMmenu > li.VmOpen > div > a,
+ul.VMmenu > li.active > div > a {
+  background-color: @JMstyle1VirtuemartCategoryModuleBackgroundHoverColor;
+} 
+
+ul.VMmenu ul.menu > li.active > div > a,
+ul.VMmenu ul.menu > li.VmOpen > div > a,
+#jm-footer-mod ul.VMmenu ul.menu > li.active > div > a,
+#jm-footer-mod ul.VMmenu ul.menu > li.VmOpen > div > a,
+#jm-footer-mod .box-ms ul.VMmenu ul.menu > li.active > div > a,
+#jm-footer-mod .box-ms ul.VMmenu ul.menu > li.VmOpen > div > a {
+  color: @JMstyle1VirtuemartCategoryModuleSubmenuFontHoverColor; 
+}
+
+ul.VMmenu li ul.menu li a:hover {
+  color: @JMstyle1VirtuemartCategoryModuleSubmenuFontHoverColor !important;    
+}
+
+.vmCartModule .show_cart a {
+  background: @JMstyle1VirtuemartCartModuleButtonBackgroundColor;
+}
+
+.cart-horizontal .vmCartModule {
+  background: url("../images/style1/addtocart.png") no-repeat right center;
+}
+
+.product .addtocart-area input.addtocart-button,
+.vmproduct .addtocart-area input.addtocart-button {
+  background: url("../images/style1/addtocart2.png") no-repeat left center;
+}
+
+.ratingbox {
+  background: url("../images/style1/color-stars.png") repeat-x 0 bottom !important;
+}
+
+.ratingbox div,
+.ratingbox span {
+  background: url("../images/style1/color-stars.png") repeat-x;
+}

@@ -1,0 +1,304 @@
+/*--------------------------------------------------------------
+# Copyright (C) joomla-monster.com
+# License: http://www.joomla-monster.com/license.html Joomla-Monster Proprietary Use License
+# Website: http://www.joomla-monster.com
+# Support: info@joomla-monster.com
+---------------------------------------------------------------*/
+
+/* ==========================================================================
+   VARIABLES import
+   ========================================================================== */
+  
+@import "template_variables.less";
+
+/* ==========================================================================
+   MIXINS import
+   ========================================================================== */
+
+@import "template_mixins.less";
+@import "../../../plugins/system/jmframework/includes/assets/template/bootstrap/less/mixins.less";
+
+/* ==========================================================================
+   EDITOR styles
+   ========================================================================== */
+
+.jm-custom-categories .jm-custom-box h2 span:hover::before,
+.jm-custom-categories .jm-custom-box h2 span:focus::before,
+.jm-custom-categories .jm-custom-box h2 span:hover::after,
+.jm-custom-categories .jm-custom-box h2 span:focus::after {
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+/* image hovers */
+
+.dj-image-hover {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+
+.view {
+   border: 1px solid #e0e0e0;
+   overflow: hidden;
+   position: relative;
+   cursor: default;
+   max-width: 100%;
+   display: inline-block;
+}
+
+.view .mask,
+.view .content {
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   overflow: hidden;
+   top: 0;
+   left: 0;
+}
+
+.view img {
+   display: block;
+   position: relative;
+}
+
+.view h2 {
+   text-transform: uppercase;
+   text-align: center;
+   position: relative;
+   padding: 10px;
+   background: rgb(255, 255, 255);
+   background: rgba(255, 255, 255, 0.7);
+   margin: 20px 0 0 0 !important;
+}
+
+.view p {
+   padding: 10px;
+}
+
+.view a.readmore {
+  margin: 0;
+}
+
+/** third **/
+  
+.view-third img {
+   .transition(all 0.2s ease-in);
+}
+
+.view-third .mask {
+   background-color: rgb(221,221,221);
+   background-color: rgba(221,221,221,0.9);
+   .opacity(0);
+   -webkit-transform: translate(460px, -100px) rotate(180deg);
+   -moz-transform: translate(460px, -100px) rotate(180deg);
+   -o-transform: translate(460px, -100px) rotate(180deg);
+   -ms-transform: translate(460px, -100px) rotate(180deg);
+   transform: translate(460px, -100px) rotate(180deg);
+   .transition(all 0.2s 0.4s ease-in-out);
+}
+
+.view-third h2 {
+   .translateY(-100px);
+   .transition(all 0.2s ease-in-out);
+}
+
+.view-third p {
+   -webkit-transform: translateX(300px) rotate(90deg);
+   -moz-transform: translateX(300px) rotate(90deg);
+   -o-transform: translateX(300px) rotate(90deg);
+   -ms-transform: translateX(300px) rotate(90deg);
+   transform: translateX(300px) rotate(90deg);
+   .transition(all 0.2s ease-in-out);
+}
+
+.view-third a.readmore {
+   .translateY(-200px);
+   .transition(all 0.2s ease-in-out);
+}
+
+.view-third:hover .mask {
+   .opacity(100);
+   .transition-delay(0s);
+   -webkit-transform: translate(0px, 0px);
+   -moz-transform: translate(0px, 0px);
+   -o-transform: translate(0px, 0px);
+   -ms-transform: translate(0px, 0px);
+   transform: translate(0px, 0px);
+}
+
+.view-third:hover h2 {
+   .translateY(0px);
+   .transition-delay(0.5s);
+}
+
+.view-third:hover p {
+   -webkit-transform: translateX(0px) rotate(0deg);
+   -moz-transform: translateX(0px) rotate(0deg);
+   -o-transform: translateX(0px) rotate(0deg);
+   -ms-transform: translateX(0px) rotate(0deg);
+   transform: translateX(0px) rotate(0deg);
+   .transition-delay(0.4s);
+}
+
+.view-third:hover a.readmore {
+   .translateY(0px);
+   .transition-delay(0.3s);
+} 
+
+/** fifth **/
+  
+.view-fifth img {
+   .transition(all 0.3s ease-in-out);
+}
+
+.view-fifth .mask {
+   background-color: rgb(221,221,221);
+   background-color: rgba(221,221,221,0.9);
+   .translateX(-100%);
+   .opacity(100);
+   .transition(all 0.3s ease-in-out);
+}
+
+.view-fifth p {
+   .opacity(0);
+   .transition(all 0.2s linear);
+}
+
+.view-fifth:hover .mask {
+   .translateX(0px);
+}
+
+.view-fifth:hover img {
+   .translateX(100%);
+}
+
+.view-fifth:hover p {
+   .opacity(100);
+}
+
+/** eighth **/
+
+.view-eighth .mask {
+   background-color: rgb(221,221,221);
+   background-color: rgba(221,221,221,0.9);
+   top: -200px;
+   .opacity(0);
+   .transition(all 0.3s ease-out 0.5s);
+}
+
+.view-eighth h2 {
+   .translateY(-200px);
+   .transition(all 0.2s ease-in-out 0.1s);
+}
+
+.view-eighth p {
+   .translateY(-200px);
+   .transition(all 0.2s ease-in-out 0.2s);
+}
+
+.view-eighth a.readmore {
+   .translateY(-200px);
+   .transition(all 0.2s ease-in-out 0.3s);
+}
+
+.view-eighth:hover .mask {
+   .opacity(100);
+   top: 0px;
+   .transition-delay(0s);
+   -webkit-animation: bounceY 0.9s linear;
+   -moz-animation: bounceY 0.9s linear;
+   -ms-animation: bounceY 0.9s linear;
+   animation: bounceY 0.9s linear;
+}
+
+.view-eighth:hover h2 {
+   .translateY(0px);
+   .transition-delay(0.4s);
+}
+
+.view-eighth:hover p {
+   .translateY(0px);
+   .transition-delay(0.2s);
+}
+
+.view-eighth:hover a.readmore {
+   .translateY(0px);
+   .transition-delay(0s);
+}
+
+@keyframes bounceY {
+    0% { transform: translateY(-205px);}
+    40% { transform: translateY(-100px);}
+    65% { transform: translateY(-52px);}
+    82% { transform: translateY(-25px);}
+    92% { transform: translateY(-12px);}
+    55%, 75%, 87%, 97%, 100% { transform: translateY(0px);}
+}
+
+@-moz-keyframes bounceY {
+    0% { -moz-transform: translateY(-205px);}
+    40% { -moz-transform: translateY(-100px);}
+    65% { -moz-transform: translateY(-52px);}
+    82% { -moz-transform: translateY(-25px);}
+    92% { -moz-transform: translateY(-12px);}
+    55%, 75%, 87%, 97%, 100% { -moz-transform: translateY(0px);}
+}
+
+@-webkit-keyframes bounceY {
+    0% { -webkit-transform: translateY(-205px);}
+    40% { -webkit-transform: translateY(-100px);}
+    65% { -webkit-transform: translateY(-52px);}
+    82% { -webkit-transform: translateY(-25px);}
+    92% { -webkit-transform: translateY(-12px);}
+    55%, 75%, 87%, 97%, 100% { -webkit-transform: translateY(0px);}
+}
+
+/** tenth **/
+  
+.view-tenth img {
+   .scaleY(1);
+   .transition(all 0.7s ease-in-out);
+}
+
+.view-tenth .mask {
+   background-color: rgb(221,221,221);
+   background-color: rgba(221,221,221,0.9);
+   .transition(all 0.5s linear);
+   .opacity(0);
+}
+
+.view-tenth h2 {
+   .scale(0);
+   .transition(all 0.5s linear);
+   .opacity(0);
+}
+
+.view-tenth p {
+   .opacity(0);
+   .scale(0);
+   .transition(all 0.5s linear);
+}
+
+.view-tenth a.readmore {
+   .opacity(0);
+   .scale(0);
+   .transition(all 0.5s linear);
+}
+
+.view-tenth:hover img {
+   .scale(10);
+   .opacity(0);
+}
+
+.view-tenth:hover .mask {
+   .opacity(100);
+}
+
+.view-tenth:hover h2,
+.view-tenth:hover p,
+.view-tenth:hover a.readmore {
+   .scale(1);
+   .opacity(100);
+}

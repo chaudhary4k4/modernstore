@@ -1,0 +1,515 @@
+/*--------------------------------------------------------------
+# Copyright (C) joomla-monster.com
+# License: http://www.joomla-monster.com/license.html Joomla-Monster Proprietary Use License
+# Website: http://www.joomla-monster.com
+# Support: info@joomla-monster.com
+---------------------------------------------------------------*/
+
+/* ==========================================================================
+   MODULES styles
+   ========================================================================== */
+
+.span0 {
+  float: none !important;
+}
+
+/* default module */
+
+.jm-module,
+.moduletable {
+  margin-bottom: @JMbaseSpace;
+}
+
+.jm-module .jm-title,
+.moduletable > h3 {
+  margin: 0 0 18px;
+  padding: 0 0 18px;
+  font-weight: bold;
+  color: @JMmoduleTitleFontColor;
+  text-transform: uppercase;
+  border-bottom: 1px solid @JMborder;
+  position: relative;
+  &:after {
+    content: '';
+    width: 34px;
+    height: 1px;
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+  }
+}
+
+#jm-footer-mod {
+  .jm-module .jm-title,
+  .moduletable > h3 {
+    color: @JMfootermodModuleFontColor;
+    border-bottom: 1px solid @JMfootermodModuleBorder;
+  }
+}
+
+/** no-margin-ms **/
+
+.no-margin-ms.jm-module {
+  margin: 0;
+}
+
+/** dotted **/
+  
+.jm-module.dotted-ms .jm-title,
+.moduletable.dotted-ms > h3 {
+  border-bottom: 1px dotted @JMborder;
+  &:after {
+    display: none;
+  }
+}
+
+#jm-footer-mod {
+  .jm-module.dotted-ms .jm-title,
+  .moduletable.dotted-ms > h3 {
+    border-bottom: 1px dotted @JMfootermodModuleBorder;
+  }
+}
+
+/** center **/
+  
+.jm-module.center-ms .jm-title  {
+  text-align: center; 
+  &:after {
+    content: '';
+    width: 64px;
+    left: 50%;
+    margin-left: -32px;
+  }
+}
+
+/* border 0 */
+
+#jm-bottom0 .jm-module.center-ms h3.jm-title {
+  margin-bottom: 30px;
+  padding-top: 18px;
+  background: @JMbottom0TitleCenterBackground;
+}
+
+#jm-bottom0 div + .jm-module.center-ms h3.jm-title {
+  margin-top: 0;
+  border-top: 1px solid @JMborder;
+}
+
+/* gutter */
+
+#jm-bottom0 .jm-module.center-ms h3.jm-title {
+  margin-top: -(@JMbaseSpace + 18);
+}
+
+#jm-djmenu + #jm-bottom1 #jm-bottom0 .jm-module.center-ms:first-child .jm-title {
+  margin-top: -(@JMbaseSpace + 1);
+}
+
+#jm-header-top + #jm-bottom1 #jm-bottom0 .jm-module.center-ms:first-child .jm-title {
+  padding-top: (@JMbaseSpace + 1);
+  margin-top: -(@JMbaseSpace + 1);
+}
+
+/** badge **/
+  
+.jm-module.badge-ms .jm-title {
+  background: @JMmoduleBadgeTitleBackground;
+  color: @JMmoduleBadgeTitleFontColor;
+  font-size: 22px;
+  line-height: 28px;
+  padding: 8px 15px;
+  display: inline-block;
+  border: none !important;
+  &:after,
+  &:before {
+    background: none;
+    content: '';
+    width: 0;
+    height: 0;
+    position: absolute;
+    right: -12px;
+    left: auto;
+  }
+  &:before {
+    border-width: 22px 12px 0 0;
+    border-style: solid inset;
+    border-color: @JMmoduleBadgeTitleBackground transparent transparent transparent;
+    top: 0;
+    bottom: auto;
+  }
+  &:after {
+    border-width: 0 12px 22px 0;
+    border-style: solid inset;
+    border-color: transparent transparent @JMmoduleBadgeTitleBackground transparent;
+    bottom: 0;
+  }
+}
+
+/** box **/
+  
+.jm-module.box-ms {
+  background: @JMmoduleBoxBackground;
+  border: 1px solid @JMborder;
+  .jm-title {
+    background: @JMmoduleBoxTitleBackground;
+    color: @JMmoduleBoxTitleFontColor;
+    font-size: 20px;
+    line-height: 26px;
+    padding: 9px 15px;
+    display: inline-block;
+    font-weight: 300;
+    border: none !important;
+    margin: 9px 0 0 -11px;
+    &:after {
+      background: none;
+      content: '';
+      width: 0;
+      height: 0;
+      position: absolute;
+      left: 0;
+      bottom: -10px;
+      border-width: 10px 0 0 10px;
+      border-style: solid inset;
+      border-color: @JMmoduleBoxTitleTriangleBackground transparent transparent transparent;
+    }
+  }
+  .jm-module-content {
+    padding: 30px;
+  }
+}
+
+#jm-footer-mod .jm-module.box-ms {
+  color: @JMbodyFont;
+}
+
+/* logout topbar */
+
+#jm-top-bar {
+  div.login-greeting,
+  .logout-button {
+    float: left;
+  }
+  .logout-button .btn {
+    font-size: 12px;
+    height: 24px;
+    line-height: 24px;
+    padding: 0 5px;
+    margin-left: 10px!important;
+    margin-top: -5px;
+  }
+}
+
+/* search */
+
+.jm-search {
+  form {
+    margin: 0;
+    position: relative;
+  }
+  input.inputbox {
+    .box-shadow(inset 0 0 2px rgba(0,0,0,0.1));
+    .border-radius(2px);
+    font-style: italic;
+    color: #b4b4b4;
+    padding-right: 30px;
+    margin: 0;
+    .box-sizing(border-box);
+    max-width: 100%;
+    height: 36px;
+    line-height: 36px;
+    font-size: 13px;
+  }
+  input.button,
+  button.button {
+    background: url("../images/searchButton.png") no-repeat;
+    width: 16px;
+    height: 16px;
+    line-height: 16px;
+    font-size: 0;
+    text-indent: -9999px;
+    padding: 0;
+    position: absolute;
+    top: 10px;
+    right: 12px;
+    &:hover {
+      background: url("../images/searchButton.png") no-repeat;  
+    }
+  }
+}
+
+/* jmmoduleraw */
+    
+.jm-module-raw {
+  float: left;
+  margin-left: 10px;
+  &:first-child {
+    margin: 0;
+  }
+}
+
+#jm-logo-bar .jm-module-raw {
+  float: none;
+  margin: 10px 0 0;
+  &:first-child {
+    margin: 0;
+  }
+}
+
+/** page suffix **/
+  
+.contact-ps {
+  .contact-address ~ h3,
+  form#contact-form > fieldset > legend,
+  .contact-address {
+    display: none;
+  } 
+  > h3:first-child {
+      border-bottom: 1px solid @JMborder;
+      color: @JMcontactpsTitleFontColor;
+      font-weight: bold;
+      margin: 0 0 30px;
+      padding: 0 0 20px;
+      text-transform: uppercase;
+  }
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    max-width: 400px;
+    .box-sizing(border-box);
+  }
+  input[type="text"],
+  input[type="email"] {
+      height: 36px;
+      line-height: 36px;
+  }
+  address {
+    font-style: normal;
+  }
+  .control-group {
+    margin-top: 0;
+    .control-label {
+      float: none;
+      text-align: left;
+      width: auto;
+      padding: 0;
+    }
+    .controls {
+      margin: 0;
+    }
+  }
+  .form-actions {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;    
+  }
+}
+
+/** custom slide **/
+
+.jm-custom-slide {
+  color: @JMcustomslideTitleFontColor;
+  padding: 20px 0 0;
+  position: relative;
+  h3 {
+    float: left;
+    font-size: 22px;
+    font-weight: bold;
+    margin: 0;
+  }
+  h3 a {
+    color: @JMcustomslideTitleFontColor;
+  }
+  h3 a:hover {
+    text-decoration: none;
+  }
+  .jm-slide-price {
+    float: right;
+    font-size: 38px;
+    line-height: 1em;
+    font-weight: bold;
+    display: block;
+  }
+  .jm-slide-desc {
+    clear: left;
+    display: block;
+    font-size: 11px;
+    line-height: 1.5em;
+    font-weight: 300;
+    text-transform: uppercase;
+  }
+  p {
+    text-align: center;
+    clear: both;
+  } 
+}
+
+.jm-module.box-ms .jm-custom-slide a.readmore {
+  width: 36px;
+  height: 36px;
+  padding: 0;
+  font-size: 0;
+  position: absolute;
+  left: 50%;
+  margin-left: -18px;
+  bottom: -53px;
+}
+
+/** custom discount **/
+
+.jm-custom-discount {
+  display: inline-block;
+  width: 100%;
+  color: @JMcustomdiscountFontColor;
+  font-weight: bold;
+  .jm-custom-left {
+    float: left;
+    width: 40%;
+  }
+  .jm-custom-right {
+    float: right;
+    width: 60%;
+    text-align: right;
+  }
+  h3 {
+    text-transform: uppercase;
+    font-size: 35px;
+    margin-top: 20px;
+    line-height: 1em;
+  }
+  h3 span {
+    display: block;
+    font-size: 28px;
+  }
+  h3 + span {
+    font-size: 15px;
+    margin: 0 0 15px;
+    display: block;
+  }
+}
+
+/** custom boxes **/
+
+.jm-row .jm-box {
+  float: left;
+}
+  
+.jm-row.jm-box2 .jm-box {
+  width: 50%;
+} 
+
+.jm-row.jm-box3 .jm-box {
+  width: 33.3%; 
+}
+
+.jm-row.jm-box4 .jm-box {
+  width: 25%;
+}
+
+.jm-row .jm-box img {
+  .box-sizing(border-box);
+}
+
+/** custom categories **/
+
+.jm-custom-categories {
+  padding: 30px 0;
+  display: inline-block;
+  width: 100%;
+  .jm-custom-box {
+    float: left;
+  }
+}
+
+.jm-custom-categories.jm-box2 .jm-custom-box {
+  width: 50%;
+} 
+
+.jm-custom-categories.jm-box3 .jm-custom-box {
+  width: 33.3%;
+} 
+
+.jm-custom-categories.jm-box4 .jm-custom-box {
+  width: 25%;
+} 
+
+.jm-custom-categories .jm-custom-box-in {
+  border: 5px solid transparent;
+  .box-shadow(inset 0 0 1px rgba(255,255,255,0.3));
+  width: 226px;
+  margin: 0 auto;
+}
+
+.jm-custom-categories.jm-rounded .jm-custom-box-in {
+  .border-radius(50%);
+  height: 226px;
+}
+
+.jm-custom-categories .jm-custom-box {
+  h2 {
+    margin: 0;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+  }
+  h2 a {
+    padding: 30px;
+    display: block;
+    color: @JMcustomcategoriesTitleFontColor !important;
+    text-decoration: none;
+  }
+  h2 span {
+    display: block;
+  }
+  h2 a img {
+    display: inline-block;
+  }
+  h2 span {
+    padding: 16px 20px 18px;
+    position: relative;
+    margin: 12px 0;
+  }
+  h2 span:hover {
+    letter-spacing: 1px;
+  }
+  h2 span::before,
+  h2 span::after {
+    position: absolute;
+    width: 70px;
+    height: 1px;
+    background: @JMcustomcategoriesBorder;
+    content: '';
+    .opacity(20);
+    .transition(all 0.3s);
+  }
+  h2 span::before {
+    top: 0;
+    left: 50%;  
+    margin-left: -35px;
+  }
+  h2 span::after {
+    bottom: 0;
+    right: 50%;
+    margin-right: -35px;
+  }
+  h2 span:hover::before,
+  h2 span:focus::before,
+  h2 span:hover::after,
+  h2 span:focus::after {
+    width: 21px;
+  }
+  h2 span:hover::before,
+  h2 span:focus::before {
+    left: 0;
+    margin-left: 0;
+    top: 50%;
+  }
+  h2 span:hover::after,
+  h2 span:focus::after {
+    right: 0;
+    margin-right: 0;
+    bottom: 50%;
+  }
+}
